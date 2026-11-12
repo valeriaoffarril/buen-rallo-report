@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Buen Rallo Biweekly Report</title>
+<title>Buen Rallo Biweekly Report - Oct 29-Nov 11, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -94,6 +94,7 @@
     transition:background .15s ease, border-color .15s ease;
   }
   .period-card:hover{background:rgba(255,255,255,.11);}
+  a.period-card{text-decoration:none;color:inherit;display:block;}
   .period-card.current{
     background:var(--brand-cream);
     border-color:var(--brand-cream);
@@ -424,23 +425,34 @@
       </div>
     </div>
   </div>
-  <div class="period-tray" aria-label="Three reporting periods" id="periodTray">
-    <div class="period-card current" data-period="current" role="button" tabindex="0">
-      <div class="tag">Current period</div>
+  <div class="period-tray" aria-label="Report periods: pick one to open its full report" id="periodTray" style="grid-template-columns:repeat(5,minmax(0,1fr));">
+    <div class="period-card current" aria-current="page">
+      <div class="tag">You are viewing</div>
       <div class="dates">Oct 29 &rarr; Nov 11, 2026</div>
-      <div class="meta">Active report window</div>
+      <div class="meta">Current period &middot; Active report window</div>
     </div>
-    <div class="period-card" data-period="previous" role="button" tabindex="0">
-      <div class="tag">Previous period</div>
+    <a class="period-card" href="report-2026-10-15.html">
+      <div class="tag">Earlier report</div>
       <div class="dates">Oct 15 &rarr; Oct 28, 2026</div>
-      <div class="meta">Re-pulled with the six-brand filter</div>
-    </div>
-    <div class="period-card" data-period="twoAgo" role="button" tabindex="0">
-      <div class="tag">Two periods ago</div>
+      <div class="meta">14-day window</div>
+    </a>
+    <a class="period-card" href="report-2026-09-17.html">
+      <div class="tag">Earlier report</div>
       <div class="dates">Sep 17 &rarr; Oct 7, 2026</div>
-      <div class="meta">Reference window; one-week gap (Oct 8&ndash;14) after it</div>
-    </div>
+      <div class="meta">3-week window; one-week gap (Oct 8&ndash;14) follows</div>
+    </a>
+    <a class="period-card" href="report-2026-09-03.html">
+      <div class="tag">Earlier report</div>
+      <div class="dates">Sep 3 &rarr; Sep 16, 2026</div>
+      <div class="meta">14-day window</div>
+    </a>
+    <a class="period-card" href="report-2026-08-21.html">
+      <div class="tag">Earlier report</div>
+      <div class="dates">Aug 21 &rarr; Sep 2, 2026</div>
+      <div class="meta">Full report for this window</div>
+    </a>
   </div>
+  <div style="font-size:11px;color:#B9C7A4;margin-top:8px;">Each period card opens the full report for that window: KPIs, restaurants, incidents, sentiment and action items.</div>
   <div class="table-wrap" style="margin-top:10px;color:var(--ink);">
     <table>
       <thead>
@@ -1086,17 +1098,6 @@ function renderPeriodCompare(periodKey){
     body.appendChild(tr);
   });
 }
-
-document.querySelectorAll('#periodTray .period-card').forEach(card => {
-  card.addEventListener('click', () => {
-    document.querySelectorAll('#periodTray .period-card').forEach(c => c.classList.remove('current'));
-    card.classList.add('current');
-    renderPeriodCompare(card.dataset.period);
-  });
-  card.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); card.click(); }
-  });
-});
 
 renderPeriodCompare('current');
 </script>
