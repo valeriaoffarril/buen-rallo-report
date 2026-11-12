@@ -859,6 +859,177 @@ const brands = [
   }
 ];
 
+const overviewBodySantana = document.getElementById('overview-body-santana');
+const overviewBodySF = document.getElementById('overview-body-sf');
+const platformBody = document.getElementById('platform-body');
+const brandViews = document.getElementById('brand-views');
+
+function platDelta(p){
+  if(!p || p.priorRating === undefined) return '';
+  const diff = Math.round((p.rating - p.priorRating)*10)/10;
+  if(diff === 0) return '';
+  const color = diff > 0 ? 'var(--good)' : 'var(--bad)';
+  const arrow = diff > 0 ? '&uarr;' : '&darr;';
+  return ' <span style="color:'+color+';font-size:10.5px;font-weight:600;">'+arrow+Math.abs(diff).toFixed(1)+'</span>';
+}
+function platCell(p){
+  if(!p) return '<span style="color:var(--muted);">&mdash;</span>';
+  return '<span class="plat-cell">'+p.rating.toFixed(1)+(p.n?' <span class="n">(n='+p.n+')</span>':'')+platDelta(p)+'</span>';
+}
+function platCard(name, p){
+  if(!p) return '';
+  return '<div class="card"><div class="p-name">'+name+'</div><div class="p-val">'+p.rating.toFixed(1)+platDelta(p)+'</div><div class="p-n">'+(p.n?'n='+p.n:'')+(p.priorRating!==undefined?' <span style="color:var(--muted);">(was '+p.priorRating.toFixed(1)+')</span>':'')+'</div></div>';
+}
+
+function statusLabel(s){ return s==='bien' ? 'Healthy' : s==='atencion' ? 'Needs attention' : 'Critical'; }
+function statusDot(s){ return s==='bien' ? '#2E6B4F' : s==='atencion' ? '#A56A18' : '#A23B33'; }
+function sentimentColor(v){ return v>=25 ? 'var(--good)' : v>=0 ? 'var(--watch)' : 'var(--bad)'; }
+function positivityColor(v){ return v>=65 ? 'var(--good)' : v>=40 ? 'var(--watch)' : 'var(--bad)'; }
+function deltaText(diff, lowerIsBetter, suffix){
+  const rounded = Math.round(diff*10)/10;
+  const good = lowerIsBetter ? rounded < 0 : rounded > 0;
+  const bad = lowerIsBetter ? rounded > 0 : rounded < 0;
+  const color = rounded===0 ? 'var(--muted)' : (good ? 'var(--good)' : 'var(--bad)');
+  const arrow = rounded > 0 ? '&uarr;' : rounded < 0 ? '&darr;' : '&middot;';
+  const val = Math.abs(rounded).toFixed(1) + (suffix ? ' ' + suffix : '');
+  return '<span style="color:'+color+'; font-weight:600;">'+arrow+' '+val+'</span>';
+}
+
+const allTab = document.createElement('div');
+allTab.className = 'tab active';
+allTab.textContent = 'All restaurants';
+allTab.onclick = () => selectView('overview', allTab);
+
+const allRow = document.createElement('div');
+allRow.className = 'tab-row';
+allRow.appendChild(allTab);
+tabsEl.appendChild(allRow);
+
+const tabGroups = [
+  { label: 'Santana Row, San Jos\u00e9', memberIds: ['zazil', 'suspiro', 'eljardin', 'parranga'] },
+  { label: 'Presidio, San Francisco', memberIds: ['colibri', 'ilparco'] }
+];
+tabGroups.forEach(g => {
+  const row = document.createElement('div');
+  row.className = 'tab-row';
+  const label = document.createElement('span');
+  label.className = 'tab-cluster-label';
+  label.textContent = g.label;
+  row.appendChild(label);
+  g.memberIds.forEach(id => {
+    const b = brands.find(x => x.id === id);
+    if (!b) return;
+    const tab = document.createElement('div');
+    tab.className = 'tab';
+    tab.innerHTML = '<span class="dot" style="background:' + statusDot(b.status) + '"></span>' + b.name;
+    tab.onclick = () => selectView(b.id, tab);
+    row.appendChild(tab);
+  });
+  tabsEl.appendChild(row);
+});
+
+brands.forEach(b=>{
+  const tr = document.createElement('tr');
+  const ratingDiff = b.rating - b.prior.rating;
+  tr.innerHTML = `
+    <td><span class="brandname">${b.name}</span></td>
+    <td><span class="stamp ${b.status}">${statusLabel(b.status)}</span></td>
+    <td>${b.count}</td>
+    <td>${b.rating.toFixed(2)}</td>
+    <td>${b.pct45.toFixed(1)}%</td>
+    <td>${b.pct13.toFixed(1)}%</td>
+    <td>${deltaText(ratingDiff, false, 'pts rating')} <span style="color:var(--muted);font-size:11px;">(was ${b.prior.rating.toFixed(2)})</span></td>
+    <td>${b.nps===null?'<span style="color:var(--muted)">n/a</span>':(b.nps>0?'+':'')+b.nps.toFixed(1)}</td>
+  `;
+  const targetBody = (b.id === 'colibri' || b.id === 'ilparco') ? overviewBodySF : overviewBodySantana;
+  targetBody.appendChild(tr);
+
+  const ptr = document.createElement('tr');
+  if (b.id === 'zazil') {
+    const dividerSR = document.createElement('tr');
+    dividerSR.innerHTML = '<td colspan="11" style="background:var(--brand-cream);font-family:\'IBM Plex Mono\',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);">Santana Row, San Jos&eacute;</td>';
+    platformBody.appendChild(dividerSR);
+  }
+  if (b.id === 'colibri') {
+    const divider = document.createElement('tr');
+    divider.innerHTML = '<td colspan="11" style="background:var(--brand-cream);font-family:\'IBM Plex Mono\',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);">Presidio, San Francisco</td>';
+    platformBody.appendChild(divider);
+  }
+  ptr.innerHTML = `
+    <td><span class="brandname">${b.name}</span></td>
+    <td>${platCell(b.platforms.gmb)}</td>
+    <td>${platCell(b.platforms.yelp)}</td>
+    <td>${platCell(b.platforms.doordash)}</td>
+    <td>${platCell(b.platforms.ubereats)}</td>
+    <td>${platCell(b.platforms.grubhub)}</td>
+    <td>${platCell(b.platforms.resy)}</td>
+    <td>${platCell(b.platforms.opentable)}</td>
+    <td>${platCell(b.platforms.tgtg)}</td>
+    <td>${platCell(b.platforms.tripadvisor)}</td>
+    <td>${platCell(b.platforms.facebook)}</td>
+  `;
+  platformBody.appendChild(ptr);
+
+  const view = document.createElement('div');
+  view.className = 'view pdf-pagebreak';
+  view.id = 'view-' + b.id;
+  const sentimentBlock = `
+    <div class="sentiment-bar">
+      <div class="txt"><b>Comment sentiment by category (score / tagged comments):</b> ${b.sentimentCats} Scores are 0&ndash;100 from the Categories &amp; Keywords export. Group this period: 78.6% positive, 6.9% neutral, 14.5% negative (157 tagged comments).</div>
+    </div>`;
+  view.innerHTML = `
+    <div class="brand-head">
+      <div>
+        <h2>${b.name}</h2>
+        <div class="brand-sub">${b.sub ? b.sub + ' &middot; ' : ''}Period: Oct 29 &ndash; Nov 11, 2026</div>
+      </div>
+      <span class="stamp ${b.status}" style="font-size:12px;padding:6px 12px;">${statusLabel(b.status)}</span>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi"><div class="num">${b.count}</div><div class="lbl">Number of reviews</div><div class="sub">${deltaText(b.count-b.prior.count, false, '')} vs. previous period (${b.prior.count})</div></div>
+      <div class="kpi"><div class="num">${b.rating.toFixed(2)}</div><div class="lbl">Average rating</div><div class="sub">${deltaText(b.rating-b.prior.rating, false, '')} vs. previous period (${b.prior.rating.toFixed(2)})</div></div>
+      <div class="kpi"><div class="num" style="color:var(--good)">${b.pct45.toFixed(1)}%</div><div class="lbl">Great reviews (5&#9733;)</div><div class="sub">${b.prior.pct45===null?'<span style="color:var(--muted)">prior not comparable (definition corrected, see glossary)</span>':deltaText(b.pct45-b.prior.pct45, false, 'pt') + ' vs. previous period (' + b.prior.pct45.toFixed(1) + '%)'}</div></div>
+      <div class="kpi"><div class="num" style="color:var(--bad)">${b.pct13.toFixed(1)}%</div><div class="lbl">Low reviews (1-3&#9733;)</div><div class="sub">${b.prior.pct13===null?'<span style="color:var(--muted)">prior not comparable (definition corrected, see glossary)</span>':deltaText(b.pct13-b.prior.pct13, true, 'pt') + ' vs. previous period (' + b.prior.pct13.toFixed(1) + '%)'}</div></div>
+    </div>
+
+    ${sentimentBlock}
+
+    <div class="section-title">Ratings by platform (lifetime, manually verified)</div>
+    <div class="plat-mini">
+      ${platCard('Google', b.platforms.gmb)}
+      ${platCard('Yelp', b.platforms.yelp)}
+      ${platCard('Doordash', b.platforms.doordash)}
+      ${platCard('Uber Eats', b.platforms.ubereats)}
+      ${platCard('Grubhub', b.platforms.grubhub)}
+      ${platCard('Resy', b.platforms.resy)}
+      ${platCard('OpenTable', b.platforms.opentable)}
+      ${platCard('Too Good To Go', b.platforms.tgtg)}
+      ${platCard('TripAdvisor', b.platforms.tripadvisor)}
+      ${platCard('Facebook', b.platforms.facebook)}
+    </div>
+
+
+    <div class="cols">
+      <div class="panel pos"><h3>&#9650; Positive highlights</h3><ul>${b.positivos.map(t=>'<li>'+t+'</li>').join('')}</ul></div>
+      <div class="panel neg"><h3>&#9660; Negative highlights</h3><ul>${b.negativos.map(t=>'<li>'+t+'</li>').join('')}</ul></div>
+    </div>
+
+    <div class="actions">
+      <h3>Action items</h3>
+      ${b.acciones.map(a=>`<div class="action-row"><span class="owner ${a.owner}">${a.owner==='mkt'?'Marketing':a.owner==='ops'?'Operations':'Leadership'}</span><p>${a.text}</p></div>`).join('')}
+    </div>
+  `;
+  brandViews.appendChild(view);
+});
+
+function selectView(id, tabEl){
+  document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
+  document.getElementById('view-'+id).classList.add('active');
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  tabEl.classList.add('active');
+}
+
 // ---- Period comparison: make the 3 period cards clickable ----
 // "current" and "previous" come straight from the brands data already on this page
 // "current" comes from brands; "previous" (Oct 15-28) and "twoAgo" (Sep 17-Oct 7) are as published in the Oct 29 report.
@@ -975,4 +1146,4 @@ renderPeriodCompare('current');
 </script>
 
 </body>
-  </html>
+        </html>
