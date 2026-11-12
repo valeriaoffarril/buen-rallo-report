@@ -414,7 +414,7 @@
       <div>
         <div class="eyebrow">Buen Rallo · Reputation &amp; Reviews</div>
         <h1>Buen Rallo Biweekly Report</h1>
-        <div class="period">Period: Oct 15, 2026 &rarr; Oct 28, 2026</div>
+        <div class="period">Period: Oct 29, 2026 &rarr; Nov 11, 2026</div>
       </div>
     </div>
     <div class="scope-note">
@@ -427,61 +427,65 @@
   <div class="period-tray" aria-label="Three reporting periods" id="periodTray">
     <div class="period-card current" data-period="current" role="button" tabindex="0">
       <div class="tag">Current period</div>
-      <div class="dates">Oct 15 &rarr; Oct 28, 2026</div>
+      <div class="dates">Oct 29 &rarr; Nov 11, 2026</div>
       <div class="meta">Active report window</div>
     </div>
     <div class="period-card" data-period="previous" role="button" tabindex="0">
       <div class="tag">Previous period</div>
-      <div class="dates">Sep 17 &rarr; Oct 7, 2026</div>
-      <div class="meta">Non-overlapping with current period</div>
+      <div class="dates">Oct 15 &rarr; Oct 28, 2026</div>
+      <div class="meta">Re-pulled with the six-brand filter</div>
     </div>
     <div class="period-card" data-period="twoAgo" role="button" tabindex="0">
       <div class="tag">Two periods ago</div>
-      <div class="dates">Sep 3 &rarr; Sep 16, 2026</div>
-      <div class="meta">Reference window for the three-period trend</div>
+      <div class="dates">Sep 17 &rarr; Oct 7, 2026</div>
+      <div class="meta">Reference window; one-week gap (Oct 8&ndash;14) after it</div>
     </div>
   </div>
   <div class="table-wrap" style="margin-top:10px;color:var(--ink);">
     <table>
       <thead>
-        <tr><th>Restaurant</th><th id="periodCompareColLabel">Rating (Oct 15&ndash;28)</th><th>Reviews</th><th>Great reviews (4-5&#9733;)</th><th>Low reviews (1-3&#9733;)</th></tr>
+        <tr><th>Restaurant</th><th id="periodCompareColLabel">Rating (Oct 29&ndash;Nov 11)</th><th>Reviews</th><th>Great reviews (5&#9733;)</th><th>Low reviews (1-3&#9733;)</th></tr>
       </thead>
       <tbody id="periodCompareBody"></tbody>
     </table>
   </div>
-  <div class="period-audit"><b>Period audit:</b> this period (Oct 15&ndash;28) is 14 days, but the previous report covered 21 days (Sep 17&ndash;Oct 7), so raw counts are not directly comparable &mdash; use ratings, percentages and per-week pace. There is also a <b>gap of one week (Oct 8&ndash;14) that no report covers</b>. The arrows on the group KPIs come from Momos and compare against its own preceding 14 days (Oct 1&ndash;14), not against the previous report. <span id="periodCompareNote"></span></div>
+  <div class="period-audit"><b>Period audit:</b> this period (Oct 29&ndash;Nov 11) and the previous report period (Oct 15&ndash;28) are contiguous 14-day windows, so the arrows and the prior-period column are directly comparable. A historical one-week gap (Oct 8&ndash;14) remains between the two older periods in the trend series. <b>Scope:</b> all figures use the six-brand filter confirmed by Valeria on Nov 12; the published Oct 29 strip (198 / 72.3% / 11.8% / 96.5% / 8) used Momos "Brand: All" (nine brands), and the prior period was re-pulled with the six-brand filter (191 / 75.0% / 11.7% / 96.9% / 8) for comparability. <span id="periodCompareNote"></span></div>
   <div class="strip">
     <div class="cell">
-      <div class="num">198</div>
+      <div class="num">202</div>
       <div class="lbl">Total feedback across the group (all sources)</div>
-      <div class="delta down-bad">&darr; 19.2% vs. preceding 14 days (Momos)</div>
+      <div class="delta up">&uarr; 5.8% vs. preceding 14 days (Momos)</div>
     </div>
     <div class="cell">
-      <div class="num">72.3%</div>
+      <div class="num">80.4%</div>
       <div class="lbl">Great reviews (5-star) rate, group-wide</div>
-      <div class="delta down-bad">&darr; 8.4% vs. preceding 14 days</div>
+      <div class="delta up">&uarr; 5.4% vs. preceding 14 days</div>
     </div>
     <div class="cell">
-      <div class="num">11.8%</div>
+      <div class="num">9.5%</div>
       <div class="lbl">Low-star reviews (1-3 stars), group-wide</div>
-      <div class="delta down-bad">&uarr; 25.1% vs. preceding 14 days (worsening)</div>
+      <div class="delta up">&darr; 18.4% vs. preceding 14 days (improving)</div>
     </div>
     <div class="cell">
-      <div class="num">96.5%</div>
+      <div class="num">96.0%</div>
       <div class="lbl">Average response rate to feedback</div>
-      <div class="delta down-bad">&darr; 1.5% vs. preceding 14 days</div>
+      <div class="delta down-bad">&darr; 0.8% vs. preceding 14 days</div>
     </div>
     <div class="cell">
-      <div class="num">8</div>
+      <div class="num">6</div>
       <div class="lbl">Boosted reviews (customers nudged to post)</div>
-      <div class="delta up">&uarr; 60% vs. preceding 14 days</div>
+      <div class="delta down-bad">&darr; 25% vs. preceding 14 days</div>
     </div>
     <div class="cell">
-      <div class="num">25.26%</div>
-      <div class="lbl">Group incident rate (50 occurrences, 17 unique issues)</div>
-      <div class="delta down-bad">&uarr; 4.4 pts vs. last report (20.85%, worsening)</div>
+      <div class="num">26.74%</div>
+      <div class="lbl">Group incident rate (54 occurrences, 15 unique issues)</div>
+      <div class="delta" style="color:var(--muted)">Oct 29 report showed 25.26% (nine-brand scope, not comparable)</div>
     </div>
   </div>
+  <div style="font-size:11.5px;color:var(--muted);margin-top:8px;">About the arrows: change figures are quoted exactly as Momos displays them (all with a % sign; Momos does not state whether a change on a percentage metric is relative or in points). Arrows compare against Momos's own preceding 14 days, which this time coincide exactly with the previous report period.</div>
+</div>
+
+<main></div>
 </div>
 
 <main>
@@ -493,38 +497,39 @@
 
     <div class="group-rep">
       <div>
-        <div class="score">4.54</div>
-        <div class="score-lbl">Group weighted rating this period (Oct 15&ndash;28)</div>
+        <div class="score">4.57</div>
+        <div class="score-lbl">Group weighted rating this period (Oct 29&ndash;Nov 11)</div>
       </div>
       <div class="desc">
-        <b>The group slipped back this period, and the cause is concentrated in Santana Row.</b> Il Parco again lifts the average (48 of 188 reviews at 4.90), so the 4.54 group score is <b>4.42 without it</b> (it was 4.53). In <b>Santana Row</b>: <b>El Jard&iacute;n fell to 3.33</b> (from 4.30), the lowest rating in this series, with 47.5% low-star reviews and a 71.4% incident rate &mdash; last period's rebound did not hold; <b>Suspiro dropped to 4.25</b> (from 4.60), its second decline in a row, with its incident rate at 43.8% and 14 incidents in a single week; Zazil rose to 4.73; Parranga rose to 4.81 on a smaller sample (21). In <b>San Francisco</b>: Il Parco reached 4.90 (n=48, 45 of them on Yelp) with a 2.1% incident rate; Colibr&iacute; rose to 4.73, though its incident rate climbed to 31.8%. Comment sentiment across the group (CSV, 423 tagged comments): <b>74.7% positive, 5.2% neutral, 17.5% negative</b> (net +57.2) versus +62.7 last period; without Il Parco it is +43.8 (was +46.8).
+        <b>The group recovered this period, led by Santana Row's two healthiest brands.</b> <b>Parranga leads at 4.89</b> (37 reviews, zero low-star, volume up 76%) and <b>Zazil climbed for a third straight period to 4.84</b>. In <b>Santana Row</b>: <b>El Jard&iacute;n is still the weakest at 3.40</b>, driven by Yelp (8 Yelp reviews at 2.12 while 12 Google reviews average 4.25), with a 115% incident rate (23 occurrences on 20 feedbacks); <b>Suspiro stabilized at 4.28</b> after two declines, on much lower volume (14 reviews). In <b>San Francisco</b>: Il Parco posted a third straight strong period (4.82 on 50 reviews, 48 from Yelp); <b>Colibr&iacute; gave back last period's gains</b> (4.18, from 4.73). Platform mix: 187 reviews at 4.57 (Yelp 100 at 4.62, Google 74 at 4.59, delivery 13 at 4.08), 12 surveys all at 5.00, and 3 Contact Us cases (none with a written reply). Comment sentiment across the group (157 tagged comments): <b>78.6% positive, 6.9% neutral, 14.5% negative</b> (net +64.1).
       </div>
     </div>
 
-    <div class="section-title">Comment sentiment by restaurant (Oct 15&ndash;28)</div>
+    <div class="section-title">Comment sentiment by restaurant (Oct 29&ndash;Nov 11)</div>
+    <div style="font-size:12.5px;color:var(--muted);margin-bottom:10px;">Group: <b>78.6% positive, 6.9% neutral, 14.5% negative</b> across 157 tagged comments (arrows as shown in Momos: positive &uarr;17.2%, neutral &uarr;33.3%, negative &uarr;4.2%). Per-restaurant scores are per category group: satisfaction score per 100 / tagged comments. A comment can carry several category tags.</div>
     <div class="table-wrap" style="margin-bottom:8px;">
       <table>
         <thead>
-          <tr><th colspan="4" style="background:var(--brand-cream);">Santana Row, San Jos&eacute;</th></tr>
-          <tr><th>Restaurant</th><th title="Net sentiment: (% positive comments) minus (% negative comments), -100 to +100">Net sentiment</th><th>Tagged comments</th><th>Top category</th></tr>
+          <tr><th colspan="3" style="background:var(--brand-cream);">Santana Row, San Jos&eacute;</th></tr>
+          <tr><th>Restaurant</th><th>Strongest categories (score/comments)</th><th>Weak categories</th></tr>
         </thead>
         <tbody>
-          <tr><td>Zazil Cocina Mexicana</td><td><span class="stamp bien">+60.5</span></td><td>81</td><td>Hospitality (22)</td></tr>
-          <tr><td>Suspiro</td><td><span class="stamp bien">+32.0</span></td><td>75</td><td>Atmosphere (16)</td></tr>
-          <tr><td>El Jard&iacute;n Tequila Bar</td><td><span class="stamp atencion">+15.6</span></td><td>64</td><td>Atmosphere (15)</td></tr>
-          <tr><td>Taquer&iacute;a Parranga</td><td><span class="stamp bien">+53.6</span></td><td>28</td><td>Food Quality (8)</td></tr>
+          <tr><td>Zazil Cocina Mexicana</td><td>Hospitality 100/29, Atmosphere 100/24, Food Quality 95/22</td><td>Pricing &amp; Value 75/4</td></tr>
+          <tr><td>Suspiro</td><td>Atmosphere 100/6, Hospitality 83/11, Food Quality 83/6</td><td>Speed of Service 0/1</td></tr>
+          <tr><td>El Jard&iacute;n Tequila Bar</td><td>Atmosphere 68/19</td><td>Pricing &amp; Value 0/6, Speed of Service 25/4, Food Quality 45/11, Hospitality 46/15</td></tr>
+          <tr><td>Taquer&iacute;a Parranga</td><td>Hospitality 100/7, Atmosphere 100/12, Food Quality 100/21</td><td>Pricing &amp; Value 88/4</td></tr>
         </tbody>
       </table>
     </div>
     <div class="table-wrap" style="margin-bottom:22px;">
       <table>
         <thead>
-          <tr><th colspan="4" style="background:var(--brand-cream);">Presidio, San Francisco</th></tr>
-          <tr><th>Restaurant</th><th title="Net sentiment: (% positive comments) minus (% negative comments), -100 to +100">Net sentiment</th><th>Tagged comments</th><th>Top category</th></tr>
+          <tr><th colspan="3" style="background:var(--brand-cream);">Presidio, San Francisco</th></tr>
+          <tr><th>Restaurant</th><th>Strongest categories (score/comments)</th><th>Weak categories</th></tr>
         </thead>
         <tbody>
-          <tr><td>Il Parco</td><td><span class="stamp bien">+92.3</span></td><td>117</td><td>Atmosphere (35)</td></tr>
-          <tr><td>Colibr&iacute; Mexican Bistro</td><td><span class="stamp bien">+62.1</span></td><td>58</td><td>Food Quality (14)</td></tr>
+          <tr><td>Il Parco</td><td>Atmosphere 94/39, Hospitality 92/25, Food Quality 86/28</td><td>Pricing &amp; Value 0/3, Speed of Service 33/3</td></tr>
+          <tr><td>Colibr&iacute; Mexican Bistro</td><td>Food Quality 100/8, Atmosphere 100/8, Hospitality 79/13</td><td>Pricing &amp; Value 0/2, In-Store Ordering 0/2</td></tr>
         </tbody>
       </table>
     </div>
@@ -537,9 +542,9 @@
             <th>Status</th>
             <th># Reviews</th>
             <th>Rating</th>
-            <th>Great reviews (4-5★)</th>
+            <th>Great reviews (5★)</th>
             <th>Low reviews (1-3★)</th>
-            <th>vs. previous period (Sep 17&ndash;Oct 7)</th>
+            <th>vs. previous period (Oct 15&ndash;28)</th>
             <th title="Net Promoter Score: -100 to +100, how likely customers are to recommend you">NPS</th>
           </tr>
         </thead>
@@ -556,15 +561,16 @@
             <th>Status</th>
             <th># Reviews</th>
             <th>Rating</th>
-            <th>Great reviews (4-5★)</th>
+            <th>Great reviews (5★)</th>
             <th>Low reviews (1-3★)</th>
-            <th>vs. previous period (Sep 17&ndash;Oct 7)</th>
+            <th>vs. previous period (Oct 15&ndash;28)</th>
             <th title="Net Promoter Score: -100 to +100, how likely customers are to recommend you">NPS</th>
           </tr>
         </thead>
         <tbody id="overview-body-sf"></tbody>
       </table>
     </div>
+    <div style="font-size:11.5px;color:var(--muted);margin-top:8px;margin-bottom:8px;">NPS is not available this period; the Momos leaderboard's NPS (point-scale question) column is empty for all six locations.</div>
 
     <div class="pdf-skip">
       <div style="margin-bottom:8px;">
@@ -573,15 +579,15 @@
       <div id="priorChartSection" style="display:none;">
         <div class="section-title">Rating vs. previous period &mdash; Santana Row, San Jos&eacute;</div>
         <div class="chart-wrap">
-          <canvas id="priorChartSantana" role="img" aria-label="Bar chart comparing each Santana Row restaurant's average rating this period against the previous non-overlapping period">Zazil: 4.58 previous, 4.59 now. Suspiro: 4.65 previous, 4.60 now. El Jard&iacute;n: 3.61 previous, 4.30 now. Parranga: 4.79 previous (n=28), 4.66 now (n=41).</canvas>
+          <canvas id="priorChartSantana" role="img" aria-label="Bar chart comparing each Santana Row restaurant's average rating this period against the previous non-overlapping period">Zazil: 4.73 previous, 4.84 now. Suspiro: 4.25 previous, 4.28 now. El Jard&iacute;n: 3.33 previous, 3.40 now. Parranga: 4.81 previous (n=21), 4.89 now (n=37).</canvas>
         </div>
         <div class="section-title">Rating vs. previous period &mdash; Presidio, San Francisco</div>
         <div class="chart-wrap">
-          <canvas id="priorChartSF" role="img" aria-label="Bar chart comparing each Presidio restaurant's average rating this period against the previous non-overlapping period">Colibr&iacute;: 3.89 previous, 4.46 now. Il Parco: 4.00 previous (n=3), 4.82 now (n=126).</canvas>
+          <canvas id="priorChartSF" role="img" aria-label="Bar chart comparing each Presidio restaurant's average rating this period against the previous non-overlapping period">Colibr&iacute;: 4.73 previous, 4.18 now. Il Parco: 4.90 previous (n=48), 4.82 now (n=50).</canvas>
         </div>
         <div class="chart-legend">
-          <span><span class="sw" style="background:#898781;"></span>Previous period (Sep 17&ndash;Oct 7)</span>
-          <span><span class="sw" style="background:#2a78d6;"></span>This period (Oct 15&ndash;28)</span>
+          <span><span class="sw" style="background:#898781;"></span>Previous period (Oct 15&ndash;28)</span>
+          <span><span class="sw" style="background:#2a78d6;"></span>This period (Oct 29&ndash;Nov 11)</span>
         </div>
       </div>
     </div>
@@ -590,16 +596,17 @@
       <h3>Three-period trend &mdash; the real story</h3>
       <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 6px;">Santana Row, San Jos&eacute;</div>
       <ul>
-        <li><b>El Jard&iacute;n is a roller coaster, not a recovery:</b> 3.61 &rarr; 4.30 &rarr; 3.33 (n=18 &rarr; 43 &rarr; 21). Two of the last three periods are below 3.7.</li>
-        <li><b>Suspiro has slid for two periods:</b> 4.65 &rarr; 4.60 &rarr; 4.25, with low-star share at 18.7% (from 8.7% two periods ago).</li>
-        <li><b>Zazil is climbing again:</b> 4.58 &rarr; 4.59 &rarr; 4.73 (n=45 &rarr; 69 &rarr; 44).</li>
-        <li><b>Parranga keeps a high rating on thinner volume:</b> 4.79 (n=28) &rarr; 4.66 (n=41) &rarr; 4.81 (n=21).</li>
+        <li><b>Zazil keeps climbing:</b> 4.59 (69) &rarr; 4.73 (44) &rarr; 4.84 (44), a third consecutive period up.</li>
+        <li><b>Parranga leads the group:</b> 4.66 (41) &rarr; 4.81 (21) &rarr; 4.89 (37), its highest rating in the series with volume up 76%.</li>
+        <li><b>Suspiro is stabilizing:</b> 4.60 &rarr; 4.25 &rarr; 4.28 (14 reviews), after two periods of decline; low-star share is still 14.3% and volume fell sharply.</li>
+        <li><b>El Jard&iacute;n stays well below the group:</b> 4.30 (43) &rarr; 3.33 (21) &rarr; 3.40 (20), driven by Yelp (8 Yelp reviews at 2.12 this period vs. 12 Google reviews at 4.25).</li>
       </ul>
       <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:14px 0 6px;">Presidio, San Francisco</div>
       <ul>
-        <li><b>Il Parco has held two strong periods:</b> 4.00 (n=3) &rarr; 4.82 (n=126) &rarr; 4.90 (n=48). The second strong period on a large sample makes this more credible, though the Yelp-driven volume is still unexplained.</li>
-        <li><b>Colibr&iacute; is back above its earlier level:</b> 3.89 &rarr; 4.46 &rarr; 4.73 (n=27 &rarr; 48 &rarr; 22). Two consecutive periods of improvement.</li>
+        <li><b>Il Parco holds strong on real volume:</b> 4.82 (126) &rarr; 4.90 (48) &rarr; 4.82 (50), a third straight strong period.</li>
+        <li><b>Colibr&iacute; gave back last period's gains:</b> 4.46 (48) &rarr; 4.73 (22) &rarr; 4.18 (22).</li>
       </ul>
+      <div style="font-size:11.5px;color:var(--muted);margin-top:8px;">First two points as published in the Oct 29 report; current values from Momos today. Per-brand figures are brand-filtered, so the six-vs-nine-brand scope correction does not affect them.</div>
     </div>
 
     <div class="section-title">Ratings by platform (lifetime)</div>
@@ -611,7 +618,7 @@
         <tbody id="platform-body"></tbody>
       </table>
     </div>
-    <div style="font-size:11.5px;color:var(--muted);margin-bottom:22px;">Platform ratings are lifetime averages taken directly from each app and entered manually; Momos does not sync Doordash and Uber Eats fully for every location, so they will not match Momos' period counts. Re-verified again this cycle. Moves found: Colibr&iacute; OpenTable (4.4&rarr;4.3), Il Parco Doordash (4.1&rarr;4.0), Suspiro OpenTable (4.5&rarr;4.4), Zazil Uber Eats (4.6&rarr;4.5), Parranga Google (4.4&rarr;4.5). Newly added: Parranga Uber Eats 4.4 and El Jard&iacute;n Doordash 4.5. Everything else held steady; old arrows are cleared.</div>
+    <div style="font-size:11.5px;color:var(--muted);margin-bottom:22px;">Platform ratings are lifetime averages taken directly from each platform's live listing on Nov 12; Momos does not sync Doordash and Uber Eats fully for every location, so they will not match Momos' period counts. Moves this cycle: Zazil Uber Eats 4.5&rarr;4.6, Suspiro OpenTable 4.4&rarr;4.5, Il Parco Yelp 3.2&rarr;3.3, Colibr&iacute; Uber Eats 4.8&rarr;4.7. Parranga correction: its Grubhub cell (4.8, confirmed by Valeria on Nov 12) now points to the Santana Row listing; the Oct 29 value came from a listing at 39 Mesa St, San Francisco (the group's Presidio commissary, a different venue, now offline). Parranga Uber Eats shows "Closed on Uber Eats" since April 2025, no rating. Cells not re-verifiable today carry their Oct 29 values: all four Resy cells, El Jard&iacute;n DoorDash, Colibr&iacute; Grubhub, TripAdvisor and Facebook, Il Parco DoorDash and Too Good To Go, Parranga Facebook.</div>
 
     <div class="section-title">Competitive benchmark &mdash; Santana Row, San Jos&eacute; (Google ratings only)</div>
     <div class="table-wrap" style="margin-bottom:8px;">
@@ -621,9 +628,9 @@
         </thead>
         <tbody>
           <tr><td>Zazil Cocina Mexicana</td><td>Oveja Negra</td><td>4.3</td><td>4.0</td><td style="color:var(--good);font-weight:600;">+7.5%</td></tr>
-          <tr><td>Suspiro</td><td>Ozumo</td><td>4.5</td><td>4.0</td><td style="color:var(--good);font-weight:600;">+12.5%</td></tr>
-          <tr><td>El Jard&iacute;n Tequila Bar</td><td>Cielo</td><td>4.3</td><td>4.2</td><td style="color:var(--good);font-weight:600;">+2.4%</td></tr>
-          <tr><td>Taquer&iacute;a Parranga</td><td>Nuevas Generaciones</td><td>4.5</td><td>4.6</td><td style="color:var(--bad);font-weight:600;">&minus;2.2%</td></tr>
+          <tr><td>Suspiro</td><td>Ozumo</td><td>4.5</td><td>4.1</td><td style="color:var(--good);font-weight:600;">+9.8%</td></tr>
+          <tr><td>El Jard&iacute;n Tequila Bar</td><td>Cielo</td><td>4.3</td><td>4.1</td><td style="color:var(--good);font-weight:600;">+4.9%</td></tr>
+          <tr><td>Taquer&iacute;a Parranga</td><td>Nuevas Generaciones</td><td>4.5</td><td>4.7</td><td style="color:var(--bad);font-weight:600;">&minus;4.3%</td></tr>
           <tr><td>Taquer&iacute;a Parranga</td><td>Taqueria Eduardo</td><td>4.5</td><td>4.4</td><td style="color:var(--good);font-weight:600;">+2.3%</td></tr>
         </tbody>
       </table>
@@ -635,13 +642,13 @@
           <tr><th>Restaurant</th><th>Competitor</th><th>Rating (own)</th><th>Rating (competitor)</th><th>Difference</th></tr>
         </thead>
         <tbody>
-          <tr><td>Il Parco</td><td>Round House Caf&eacute;</td><td>3.4</td><td>4.2</td><td style="color:var(--bad);font-weight:600;">&minus;19.0%</td></tr>
-          <tr><td>Il Parco</td><td>Caf&eacute; RX</td><td>3.4</td><td>4.7</td><td style="color:var(--bad);font-weight:600;">&minus;27.7%</td></tr>
+          <tr><td>Il Parco</td><td>Round House Caf&eacute;</td><td>3.4</td><td>4.3</td><td style="color:var(--bad);font-weight:600;">&minus;20.9%</td></tr>
+          <tr><td>Il Parco</td><td>Caf&eacute; RX</td><td>3.4</td><td>4.6</td><td style="color:var(--bad);font-weight:600;">&minus;26.1%</td></tr>
           <tr><td>Colibr&iacute; Mexican Bistro</td><td>Dalida</td><td>4.4</td><td>4.5</td><td style="color:var(--bad);font-weight:600;">&minus;2.2%</td></tr>
         </tbody>
       </table>
     </div>
-    <div style="font-size:11.5px;color:var(--muted);margin-bottom:22px;">Sample: Google ratings only, both sides. Not Yelp, not the blended internal rating. Competitor ratings were not re-checked this cycle.</div>
+    <div style="font-size:11.5px;color:var(--muted);margin-bottom:22px;">Sample: Google ratings only, both sides. Not Yelp, not the blended internal rating. Competitor ratings re-checked Nov 12 on their Google Maps listings. Moves vs. the Oct 29 report: Ozumo 4.0&rarr;4.1, Cielo 4.2&rarr;4.1, Nuevas Generaciones 4.6&rarr;4.7, Round House 4.2&rarr;4.3, Cafe RX 4.7&rarr;4.6; Oveja Negra, Taqueria Eduardo and Dalida unchanged.</div>
 
     <div class="section-title">Key dates &amp; holidays this period</div>
     <div class="table-wrap" style="margin-bottom:22px;">
@@ -650,8 +657,10 @@
           <tr><th>Date</th><th>What it is</th><th>Impact found in the data</th></tr>
         </thead>
         <tbody>
-          <tr><td>Oct 15 &ndash; Oct 28</td><td>No U.S. federal holidays fall in this window</td><td>No holiday-driven volume effect expected. The first and last weekly buckets in the incident charts are partial (3 and 4 days), so their counts are not directly comparable.</td></tr>
-          <tr><td>Oct 31 &ndash; Nov 2, 2026</td><td>Halloween and D&iacute;a de Muertos (not federal holidays)</td><td>Fall at the start of the next reporting window and may affect traffic at the Mexican concepts.</td></tr>
+          <tr><td>Saturday Oct 31</td><td>Halloween (not a federal holiday)</td><td>Falls inside this window; may lift traffic at the Mexican concepts.</td></tr>
+          <tr><td>Nov 1&ndash;2</td><td>D&iacute;a de los Muertos (not federal holidays)</td><td>Same; relevant to the Mexican concepts.</td></tr>
+          <tr><td>Tuesday Nov 3</td><td>U.S. midterm Election Day</td><td>No clear volume effect identified in the data.</td></tr>
+          <tr><td>Wednesday Nov 11</td><td>Veterans Day (federal holiday)</td><td>Visible in Zazil review volume and content (a named Veterans Day family visit).</td></tr>
         </tbody>
       </table>
     </div>
@@ -659,71 +668,56 @@
       <h3>Executive watchlist &mdash; new this period</h3>
       <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 6px;">Group-wide</div>
       <ul>
-        <li><b>Last period's good news partly reversed.</b> Group rating 4.63 &rarr; 4.54, incident rate 20.85% &rarr; 25.26%, low-star share up 25.1% (Momos). The rebounds at El Jard&iacute;n and Suspiro are what unwound; Zazil, Colibr&iacute; and Parranga improved.</li>
-        <li><b>Pricing is still the top incident.</b> Overpriced leads again (9 occurrences, rate 4.49% &rarr; 4.55%), and its weekly count kept rising (2 &rarr; 3 &rarr; 4, with the last week only 4 days long). Momos marks every top-5 incident as Critical this period, including Overpriced, which it had downgraded to Low last time. Poor Service (4.23% &rarr; 4.05%) and Poor Taste (3.17% &rarr; 3.04%) were about flat; Inconsistent or Declining Quality more than doubled (1.32% &rarr; 3.04%).</li>
-        <li><b>Three Contact Us cases are open and unanswered</b> (Il Parco, Colibr&iacute;, El Jard&iacute;n: 0% resolved, 0% responded), which pulls the group response rate down.</li>
+        <li><b>Service and price complaints are accelerating.</b> "Poor Service Quality" is the #1 incident (14 occurrences, arrow +66.7%, Critical, present at 4 locations); "Overpriced" is #2 (12 occurrences, +80.3%, High, 4 locations, mostly about drinks). "Drink" is the most-flagged item (11 occurrences).</li>
+        <li><b>Contact Us forms went unanswered.</b> 3 cases this period (Colibr&iacute; 2, one resolved; Zazil 1, resolved), 0% with a written reply, average resolution time 6d 14h. Momos's productivity view shows assigned staff replied to 0% of assigned tickets; customer-facing replies are coming from the automation.</li>
+        <li><b>Automatic label without corroboration, excluded from safety conclusions.</b> Momos's AI applied the label "Unsafe Food Handling" (Critical, new) to one Yelp ticket at Colibr&iacute; (Moraga Ave), tagging items "Drink" and "Pork". A text scan of the 199 reviews and surveys accessible through Momos's review API found no customer text supporting that label (the 3 Contact Us cases are outside that scan), and the description Momos shows for this incident type is a generic template, not a customer quote. Ticket locator kept for inspection if needed.</li>
       </ul>
       <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:14px 0 6px;">Santana Row, San Jos&eacute;</div>
       <ul>
-        <li><b>El Jard&iacute;n is back to critical and worse than before:</b> rating 4.30 &rarr; 3.33, low-star share 23.3% &rarr; 47.5%, incident rate 39.5% &rarr; 71.4%, NPS +48.8 &rarr; -28.6, net comment sentiment +47.2 &rarr; +15.6. Incidents were rising into the end of the period (9 in the final 4-day week). The rebound last report was one period; the cause behind either swing is still unnamed.</li>
-        <li><b>Suspiro is now the second problem:</b> rating 4.65 &rarr; 4.60 &rarr; 4.25 over three periods, incident rate 25.0% &rarr; 43.8%, net sentiment +52.0 &rarr; +32.0. All 14 of its incidents landed in the week of Oct 18&ndash;24, and its 13 Google reviews the following week (Oct 19&ndash;25) averaged 3.8. Something specific happened around then. Status moves to attention.</li>
-        <li><b>Zazil and Parranga are healthy:</b> Zazil 4.59 &rarr; 4.73 (incident rate 9.1%, sentiment +60.5); Parranga 4.66 &rarr; 4.81 on 21 reviews, but its incident rate is still 23.8% and review pace fell from about 14 to 10 per week.</li>
+        <li><b>El Jard&iacute;n remains the group's weakest performer:</b> rating 3.40, low-star share 45%, incident rate 115% (23 occurrences on 20 feedbacks). The driver is Yelp: 8 Yelp reviews averaging 2.12 while 12 Google reviews average 4.25. Response rate 100%.</li>
+        <li><b>Parranga and Zazil are the bright spots:</b> Parranga 37 reviews at 4.89 with zero low-star and 100% response; Zazil on a third straight climb to 4.84.</li>
+        <li><b>Suspiro is stabilizing but thin:</b> 4.28 after two declines, on 14 reviews; its QR survey is still perfect (7 responses, 5.00).</li>
       </ul>
       <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:14px 0 6px;">Presidio, San Francisco</div>
       <ul>
-        <li><b>Il Parco held its gains:</b> 4.82 &rarr; 4.90, incident rate 2.1%, NPS 89.6, sentiment +92.3. Pace eased from about 42 to 24 reviews per week, still far above the 1.5 per week before Sep 17, and 45 of its 48 reviews came from Yelp. Google got only 3 reviews and stays at 3.4. The cause of the Yelp surge is still not in the data.</li>
-        <li><b>Colibr&iacute; improved on ratings but its incident rate climbed</b> (20.8% &rarr; 31.8%, 7 occurrences) while rating went 4.46 &rarr; 4.73 and sentiment +39.2 &rarr; +62.1. Its Contact Us case is unresolved and unanswered.</li>
+        <li><b>Colibr&iacute; declined across the board:</b> 5-star share 62.5% (Momos arrow &darr;23.9%), low-star share 16.7% (&uarr;83.3%), response rate 88.5% (&darr;7.2%, the group's lowest). Its 2 Contact Us cases have no written reply.</li>
+        <li><b>Il Parco holds strong:</b> 4.82 on 50 reviews, 48 of them from Yelp; Google got only 2 reviews (3.00), so the lifetime Google rating stays at 3.4.</li>
       </ul>
     </div>
 
-    <div class="section-title">Group-wide critical issues (Incidents, Oct 15&ndash;28)</div>
-    <div class="table-wrap" style="margin-bottom:22px;">
-      <table>
-        <thead>
-          <tr><th>Issue</th><th>Severity</th><th>Occurrences</th><th>Rate</th><th>Trend</th><th>Locations affected</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Overpriced</td><td><span class="stamp critico">Critical</span></td><td>9</td><td>4.55%</td><td style="color:var(--bad)">Weekly 2 &rarr; 3 &rarr; 4 (rising; Momos shows &darr; 80%)</td><td>5 locations (Elevated)</td></tr>
-          <tr><td>Poor service quality</td><td><span class="stamp critico">Critical</span></td><td>8</td><td>4.05%</td><td style="color:var(--good)">Weekly 3 &rarr; 5 &rarr; 0 (easing)</td><td>4 locations (Elevated)</td></tr>
-          <tr><td>Poor taste</td><td><span class="stamp critico">Critical</span></td><td>6</td><td>3.04%</td><td style="color:var(--muted)">Weekly 2 &rarr; 3 &rarr; 1 (Momos shows &uarr; 20%)</td><td>3 locations (Moderate)</td></tr>
-          <tr><td>Inconsistent or declining quality</td><td><span class="stamp critico">Critical</span></td><td>6</td><td>3.04%</td><td style="color:var(--bad)">Rate more than doubled vs. last period (1.32%); weekly 1 &rarr; 3 &rarr; 2</td><td>3 locations (Moderate)</td></tr>
-          <tr><td>Unpleasant atmosphere</td><td><span class="stamp critico">Critical</span></td><td>3</td><td>1.52%</td><td style="color:var(--muted)">Flat, 1 per week</td><td>3 locations (Moderate)</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="section-title">Incidents by restaurant &mdash; Santana Row, San Jos&eacute; (Oct 15&ndash;28)</div>
+    <div class="section-title">Group-wide incidents (Oct 29&ndash;Nov 11, six brands)</div>
+    <div style="font-size:12.5px;color:var(--muted);margin-bottom:10px;">54 incident occurrences on 202 feedbacks = 26.74% incident rate. 15 unique incidents: 5 new, 2 worsening, 0 widespread, 8 critical. Figures count occurrences, not unique customers or feedbacks; one review can carry several tags, so a location's rate can exceed 100%. The Oct 29 report's 25.26% was computed on the nine-brand scope and is not comparable.</div>
     <div class="table-wrap" style="margin-bottom:8px;">
       <table>
         <thead>
-          <tr><th>Restaurant</th><th>Occurrences</th><th title="How often this issue shows up, relative to total feedback">Incident rate</th></tr>
+          <tr><th>Issue</th><th>Severity</th><th>Occurrences</th><th>Rate</th><th>Trend (Momos)</th><th>Locations</th></tr>
         </thead>
         <tbody>
-          <tr><td>El Jard&iacute;n Tequila Bar</td><td>15</td><td>71.43%</td></tr>
-          <tr><td>Suspiro</td><td>14</td><td>43.75%</td></tr>
-          <tr><td>Taquer&iacute;a Parranga</td><td>5</td><td>23.81%</td></tr>
-          <tr><td>Zazil Cocina Mexicana</td><td>4</td><td>9.10%</td></tr>
+          <tr><td>Poor Service Quality</td><td><span class="stamp critico">Critical</span></td><td>14</td><td>6.94%</td><td style="color:var(--bad)">+66.7%</td><td>4</td></tr>
+          <tr><td>Overpriced</td><td><span class="stamp atencion">High</span></td><td>12</td><td>5.95%</td><td style="color:var(--bad)">+80.3%</td><td>4</td></tr>
+          <tr><td>Inconsistent or Declining Quality</td><td><span class="stamp critico">Critical</span></td><td>5</td><td>2.48%</td><td style="color:var(--muted)">Stable</td><td>1</td></tr>
+          <tr><td>Unpleasant Atmosphere</td><td><span class="stamp atencion">High</span></td><td>5</td><td>2.48%</td><td style="color:var(--bad)">+40.9%</td><td>2</td></tr>
+          <tr><td>Poor Taste</td><td><span class="stamp critico">Critical</span></td><td>4</td><td>1.99%</td><td style="color:var(--bad)">+33.3%</td><td>3</td></tr>
+          <tr><td>Billing Error</td><td><span class="stamp atencion">High</span></td><td>3</td><td>1.49%</td><td style="color:var(--bad)">+77.2%</td><td>2</td></tr>
+          <tr><td>Unsafe Food Handling (uncorroborated automatic label, see watchlist)</td><td><span class="stamp critico">Critical, new</span></td><td>1</td><td>0.50%</td><td style="color:var(--muted)">&mdash;</td><td>1</td></tr>
+          <tr><td>Misleading Menu or Advertising</td><td><span class="stamp critico">Critical</span></td><td>1</td><td>0.50%</td><td style="color:var(--bad)">+66.7%</td><td>1</td></tr>
+          <tr><td>Dirty or Unsanitary Conditions</td><td><span class="stamp atencion">High</span></td><td>1</td><td>0.50%</td><td style="color:var(--muted)">Stable</td><td>1</td></tr>
+          <tr><td>Items Unavailable</td><td>Medium, new</td><td>1</td><td>0.50%</td><td style="color:var(--muted)">&mdash;</td><td>1</td></tr>
+          <tr><td>Rude or Unprofessional Staff</td><td>Medium, new</td><td>1</td><td>0.50%</td><td style="color:var(--muted)">&mdash;</td><td>1</td></tr>
+          <tr><td>Payment Issues</td><td>Medium, new</td><td>1</td><td>0.50%</td><td style="color:var(--muted)">&mdash;</td><td>1</td></tr>
+          <tr><td>Positive Food &amp; Service Feedback</td><td>Low</td><td>2</td><td>1.00%</td><td style="color:var(--muted)">&mdash;</td><td>2</td></tr>
+          <tr><td>General Customer Concerns</td><td>Low, new</td><td>2</td><td>1.00%</td><td style="color:var(--muted)">&mdash;</td><td>1</td></tr>
+          <tr><td>Improper Seasoning</td><td>Low</td><td>1</td><td>0.50%</td><td style="color:var(--muted)">&mdash;</td><td>1</td></tr>
         </tbody>
       </table>
     </div>
-    <div class="section-title">Incidents by restaurant &mdash; Presidio, San Francisco (Oct 15&ndash;28)</div>
-    <div class="table-wrap" style="margin-bottom:22px;">
-      <table>
-        <thead>
-          <tr><th>Restaurant</th><th>Occurrences</th><th title="How often this issue shows up, relative to total feedback">Incident rate</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Colibr&iacute; Mexican Bistro</td><td>7</td><td>31.82%</td></tr>
-          <tr><td>Il Parco</td><td style="color:var(--muted)">~1 (not in top-5 locations)</td><td>2.10%</td></tr>
-        </tbody>
-      </table>
-    </div>
+    <div style="font-size:12.5px;color:var(--muted);margin-bottom:22px;">Most-flagged items: Drink 11, Flauta 5, Guacamole 4, Sandwich 3, Corn 3. By location: El Jard&iacute;n Santana Row 23 occurrences (115% rate), Il Parco 10 (20%), Colibr&iacute; Moraga 8 (33.3%), unattributed 5, Zazil Santana Row 4 (8.5%); Suspiro and Parranga fall below the top five. By source: Yelp 28, Google 19, Contact Us cases 5, DoorDash 2. By category: Atmosphere 41, Hospitality 38, Food Quality 36, Pricing &amp; Value 36, Other 34.</div>
 
     <div class="section-title">Plain-language glossary</div>
     <div class="glossary">
       <h3>What do these terms mean?</h3>
-      <div class="gloss-item"><div class="gloss-term">OSAT (Overall Satisfaction)</div><div class="gloss-def">The share of reviews that are the full 5 stars. In this report we call it "great reviews (5-star)."</div></div>
-      <div class="gloss-item"><div class="gloss-term">CSAT (Customer Satisfaction)</div><div class="gloss-def">The share of reviews that are 4 or 5 stars &mdash; a slightly broader "happy customer" measure than OSAT. In this report we call it "great reviews (4-5-star)."</div></div>
+      <div class="gloss-item"><div class="gloss-term">OSAT (Overall Satisfaction)</div><div class="gloss-def">The share of reviews that are the full 5 stars. In this report we call it "great reviews (5-star)." Note: the Oct 29 report's glossary described "great reviews" as the 4-5-star share, but the strip value matches Momos's OSAT (5-star only; check: Zazil 89.4% OSAT + 8.5% 4-star = 97.9% at 4-5 stars). The old wording was outdated.</div></div>
+      <div class="gloss-item"><div class="gloss-term">CSAT (Customer Satisfaction)</div><div class="gloss-def">The share of reviews that are 4 or 5 stars &mdash; a broader "happy customer" measure than OSAT. This report uses OSAT (5-star only) for "great reviews"; see the OSAT entry.</div></div>
       <div class="gloss-item"><div class="gloss-term">B3 OSAT (Bottom-3-box)</div><div class="gloss-def">The share of reviews that are 1, 2, or 3 stars &mdash; the customers who were not fully satisfied. In this report we call it "low reviews (1-3-star)."</div></div>
       <div class="gloss-item"><div class="gloss-term">NPS (Net Promoter Score)</div><div class="gloss-def">A -100 to +100 score measuring how likely customers are to recommend the restaurant to a friend. Above 0 is generally good, above 50 is excellent.</div></div>
       <div class="gloss-item"><div class="gloss-term">Overall sentiment score</div><div class="gloss-def">A -100 to +100 score we calculated from AI-tagged customer comments: (% positive comments) minus (% negative comments). It captures the tone of what people actually wrote, separate from the star rating they gave.</div></div>
@@ -740,339 +734,162 @@
 
 <footer>
   <div class="foot-title">Sources</div>
-  Feedback Analytics (Overview), Reviews Analytics (by restaurant/location &amp; platform), Incidents Analytics, Categories &amp; Keywords (comment sentiment, Oct 15&ndash;28), Leaderboard export. Platform ratings (Google, Yelp, Doordash, Uber Eats, Grubhub, Resy, OpenTable, Too Good To Go) were provided directly and manually verified, not calculated from an export. Net sentiment scores are calculated directly from the Categories &amp; Keywords Positive/Negative/Neutral tags: (% positive) minus (% negative), not a category-weighted estimate.<br>
+  Feedback Analytics (Overview), Reviews Analytics (by restaurant/location &amp; platform), Incidents Analytics, Categories &amp; Keywords (comment sentiment, Oct 29&ndash;Nov 11), Leaderboard export. All Momos figures pulled live Nov 12 with a filter selecting exactly the six tracked brands. Platform ratings (Google, Yelp, Doordash, Uber Eats, Grubhub, Resy, OpenTable, Too Good To Go) were checked manually on each platform's live listing Nov 12; cells that could not be re-verified carry their Oct 29 value and date. The Parranga Grubhub 4.8 was confirmed by Valeria on Nov 12 on the Santana Row listing. Net sentiment scores are calculated directly from the Categories &amp; Keywords Positive/Negative/Neutral tags: (% positive) minus (% negative), not a category-weighted estimate.<br>
   <div class="foot-title" style="margin-top:10px;">Definitions</div>
-  Great-reviews / low-reviews percentages come directly from the OSAT/CSAT and B3 OSAT columns in the leaderboard export (top-box and bottom-3-box), not estimates. Platform ratings are lifetime averages as reported by each restaurant's Reviews export, not limited to this period.<br>
+  Great-reviews / low-reviews percentages come directly from the OSAT and B3 OSAT columns in the leaderboard export (5-star share and bottom-3-box), not estimates. Platform ratings are lifetime averages as reported by each platform listing, not limited to this period. Incident figures count occurrences, not unique customers or feedbacks.<br>
   <div class="foot-title" style="margin-top:10px;">Next review</div>
-  Every 2 weeks, aligned to this export's cutoff (next window: Oct 29 &ndash; Nov 11).
+  Every 2 weeks, aligned to this export's cutoff (next window: Nov 12 &ndash; Nov 25).
 </footer>
 
 <script>
 const brands = [
   {
     id:"zazil", name:"Zazil Cocina Mexicana", sub:"Santana Row",
-    count:44, rating:4.73, pct45:93.2, pct13:6.8, incidentRate:9.1, nps:72.7, status:"bien",
-    sentiment:null, sentimentLabel:null, positivity:60.5, positivityN:81,
-    prior:{count:69, rating:4.59, pct45:91.3, pct13:8.6},
-    platforms:{gmb:{rating:4.3,n:null}, yelp:{rating:3.6,n:null}, doordash:{rating:4.4,n:null}, ubereats:{rating:4.5,n:null,priorRating:4.6}, grubhub:{rating:3.5,n:11}, resy:{rating:4.0,n:null}, opentable:{rating:4.7,n:null}, tgtg:null, tripadvisor:null, facebook:null},
+    count:48, rating:4.84, pct45:89.4, pct13:2.1, incidentRate:8.5, nps:null, status:"bien",
+    sentimentCats:"Hospitality 100/29, Atmosphere 100/24, Food Quality 95/22, Pricing &amp; Value 75/4.",
+    prior:{count:44, rating:4.73, pct45:null, pct13:null},
+    platforms:{gmb:{rating:4.3,n:2389}, yelp:{rating:3.6,n:1638}, doordash:{rating:4.4,n:'100+'}, ubereats:{rating:4.6,n:27,priorRating:4.5}, grubhub:{rating:3.5,n:11}, resy:{rating:4.0,n:null}, opentable:{rating:4.7,n:54}, tgtg:null, tripadvisor:null, facebook:null},
     positivos:[
-      "Best rating in three periods (4.59 &rarr; 4.73), with the lowest incident rate in Santana Row (9.1%, from 16.4%).",
-      "Net comment sentiment rose from +45.1 to +60.5, and its QR survey is still the group's top survey (10 responses, 5.00)."
+      "Third consecutive period up: 4.59 &rarr; 4.73 &rarr; 4.84, with low-star share down to 2.1% (Momos arrow &darr;68.8%).",
+      "Yelp drove the period: 32 of 48 feedbacks averaging 5.00. QR survey perfect (3 &times; 5.00). Andr&eacute;s named in two reviews, including a Veterans Day family visit on Nov 11."
     ],
     negativos:[
-      "Review pace is steady but not growing (about 22 per week; 4 boosted reviews).",
-      "Uber Eats rating slipped 4.6 &rarr; 4.5 (small platform, directional only)."
+      "Response rate slipped slightly to 93.8% (Momos arrow &darr;1.7%).",
+      "DoorDash reviews averaged 3.33 (3 reviews, small sample)."
     ],
     acciones:[
-      {owner:"ops", text:"Keep this as the Santana Row reference: ask what is different about daily operations compared with Suspiro and El Jard&iacute;n."},
-      {owner:"mkt", text:"Use the QR survey results (all 5.00) in the group conversation about how to collect more feedback at the other restaurants."}
+      {owner:"ops", text:"Keep Zazil as the Santana Row reference: document what daily operations do differently from El Jard&iacute;n and Suspiro."},
+      {owner:"mkt", text:"Feature Andr&eacute;s and the Veterans Day visit in social; named-staff mentions are Zazil's strongest content this period."}
     ]
   },
   {
     id:"suspiro", name:"Suspiro", sub:"",
-    count:32, rating:4.25, pct45:81.2, pct13:18.7, incidentRate:43.8, nps:50.0, status:"atencion",
-    sentiment:null, sentimentLabel:null, positivity:32.0, positivityN:75,
-    prior:{count:40, rating:4.60, pct45:90.0, pct13:10.0},
-    platforms:{gmb:{rating:4.5,n:null}, yelp:{rating:4.1,n:null}, doordash:{rating:4.1,n:null}, ubereats:null, grubhub:null, resy:{rating:4.2,n:null}, opentable:{rating:4.4,n:null,priorRating:4.5}, tgtg:null, tripadvisor:null, facebook:null},
+    count:21, rating:4.28, pct45:76.2, pct13:14.3, incidentRate:null, nps:null, status:"atencion",
+    sentimentCats:"Hospitality 83/11, Atmosphere 100/6, Food Quality 83/6; weak spot Speed of Service 0/1.",
+    prior:{count:32, rating:4.25, pct45:null, pct13:null},
+    platforms:{gmb:{rating:4.5,n:1011}, yelp:{rating:4.1,n:809}, doordash:{rating:4.1,n:'20+'}, ubereats:null, grubhub:null, resy:{rating:4.2,n:null}, opentable:{rating:4.5,n:94,priorRating:4.4}, tgtg:null, tripadvisor:null, facebook:null},
     positivos:[
-      "Its QR survey is still strong (8 responses, 4.88) and the response rate to feedback is 96.9%.",
-      "Review pace recovered from about 13 to 16 per week."
+      "Stabilized after two declines: 4.60 &rarr; 4.25 &rarr; 4.28, with low-star share improving (Momos arrow &darr;23.8%).",
+      "QR survey perfect again: 7 responses, all 5.00."
     ],
     negativos:[
-      "Second decline in a row: rating 4.65 &rarr; 4.60 &rarr; 4.25, low-star share 8.7% &rarr; 18.7%, NPS +71.7 &rarr; +50.0.",
-      "Incident rate rose to 43.8% (second-highest), and all 14 incidents landed in the week of Oct 18&ndash;24, when 13 Google reviews from Oct 19&ndash;25 averaged only 3.8.",
-      "Net comment sentiment fell from +52.0 to +32.0, the second-biggest drop in the group after El Jard&iacute;n."
+      "Volume fell to 21 feedbacks (Momos arrow &darr;34.4%), the group's steepest drop.",
+      "Low-star share is still 14.3%, second-highest in the group, and the group-wide 'Overpriced' incident (12 occurrences, arrow +80.3%) is mostly about drinks."
     ],
     acciones:[
-      {owner:"ops", text:"Find out what happened the week of Oct 18&ndash;24 (staffing, supplier, menu, an event). One concentrated week points to a specific cause that can still be fixed."},
-      {owner:"mkt", text:"Read the 13 Google reviews from Oct 19&ndash;25 and the 14 incidents together to see whether they share a theme."},
-      {owner:"dir", text:"Status moves from healthy to attention; two consecutive declines is the same early pattern El Jard&iacute;n showed."}
+      {owner:"mkt", text:"Rebuild review volume (21 vs. 32 last period): push the QR card on the check presenter; the survey is converting perfectly (7 &times; 5.00)."},
+      {owner:"ops", text:"Review drink pricing first at Suspiro: 'Overpriced' is the group's #2 incident and its complaints cluster on drinks."}
     ]
   },
   {
-    id:"eljardin", name:"El Jard\u00edn Tequila Bar", sub:"Santana Row",
-    count:21, rating:3.33, pct45:52.4, pct13:47.5, incidentRate:71.4, nps:-28.6, status:"critico",
-    sentiment:null, sentimentLabel:null, positivity:15.6, positivityN:64,
-    prior:{count:43, rating:4.30, pct45:76.7, pct13:23.3},
-    platforms:{gmb:{rating:4.3,n:null}, yelp:{rating:3.4,n:null}, doordash:{rating:4.5,n:null}, ubereats:null, grubhub:null, resy:{rating:3.8,n:null}, opentable:{rating:4.2,n:null}, tgtg:null, tripadvisor:null, facebook:null},
+    id:"eljardin", name:"El Jard&iacute;n Tequila Bar", sub:"Santana Row",
+    count:20, rating:3.40, pct45:50.0, pct13:45.0, incidentRate:115.0, nps:null, status:"critico",
+    sentimentCats:"Atmosphere 68/19, Hospitality 46/15, Food Quality 45/11, Pricing &amp; Value 0/6, Speed of Service 25/4 &mdash; the lowest scores across the board.",
+    prior:{count:21, rating:3.33, pct45:null, pct13:null},
+    platforms:{gmb:{rating:4.3,n:2836}, yelp:{rating:3.4,n:1162}, doordash:{rating:4.5,n:null}, ubereats:null, grubhub:null, resy:{rating:3.8,n:null}, opentable:{rating:4.2,n:16}, tgtg:null, tripadvisor:null, facebook:null},
     positivos:[
-      "Comment sentiment is still net positive (+15.6), so some guests are having a good experience."
+      "Rating ticked up 3.33 &rarr; 3.40 and 5-star share rose to 50% (Momos arrow &uarr;31%); response rate is 100%.",
+      "Google reviews average 4.25 (12 reviews): the gap is Yelp, not the whole operation."
     ],
     negativos:[
-      "Rating fell back to 3.33, the lowest in this series, with 47.5% of reviews at 1-3 stars and NPS at -28.6.",
-      "Incident rate is 71.4% (15 occurrences) and incidents were rising into the end of the period (9 in the final 4-day week).",
-      "Net comment sentiment dropped from +47.2 to +15.6; review pace fell from about 14 to 10 per week after last period's rise.",
-      "One Contact Us case is unresolved and unanswered, and median reply time is 10h 50m (the slowest in the group)."
+      "Yelp is the driver: 8 reviews averaging 2.12 this period; 45% of feedback is 1-3 stars.",
+      "Incident rate 115% (23 occurrences on 20 feedbacks), the group's highest by far; Pricing &amp; Value sentiment 0/6."
     ],
     acciones:[
-      {owner:"ops", text:"The last two reports asked for the cause of the swings and neither has an answer. Get a named explanation from the GM this week, and read the 15 incidents."},
-      {owner:"dir", text:"Back to critical status. Three periods of results (3.61, 4.30, 3.33) show the rebound was not a fix; decide what operational change is going to be made."},
-      {owner:"mkt", text:"Answer and close the open Contact Us case; also confirm the Contact Us follow-up is assigned to someone."}
+      {owner:"ops", text:"Run a service-speed and staffing audit; Speed of Service sentiment is 25/100 and complaints cluster on busy nights."},
+      {owner:"dir", text:"Set a floor for El Jard&iacute;n: response rate is 100%, but a 45% low-star share needs a concept-vs-execution decision."}
     ]
   },
   {
-    id:"parranga", name:"Taquer\u00eda Parranga", sub:"",
-    count:21, rating:4.81, pct45:95.2, pct13:4.8, incidentRate:23.8, nps:81.0, status:"bien",
-    sentiment:null, sentimentLabel:null, positivity:53.6, positivityN:28,
-    prior:{count:41, rating:4.66, pct45:92.7, pct13:7.2},
-    platforms:{gmb:{rating:4.5,n:null,priorRating:4.4}, yelp:{rating:4.0,n:null}, doordash:{rating:4.4,n:null}, ubereats:{rating:4.4,n:null}, grubhub:{rating:4.8,n:null}, resy:null, opentable:null, tgtg:null, tripadvisor:null, facebook:{rating:4.4,n:null}},
+    id:"parranga", name:"Taquer&iacute;a Parranga", sub:"",
+    count:37, rating:4.89, pct45:89.2, pct13:0.0, incidentRate:null, nps:null, status:"bien",
+    sentimentCats:"Hospitality 100/7, Atmosphere 100/12, Food Quality 100/21, Pricing &amp; Value 88/4.",
+    prior:{count:21, rating:4.81, pct45:null, pct13:null},
+    platforms:{gmb:{rating:4.5,n:228}, yelp:{rating:4.0,n:155}, doordash:{rating:4.4,n:'200+'}, ubereats:null, grubhub:{rating:4.8,n:null}, resy:null, opentable:null, tgtg:null, tripadvisor:null, facebook:{rating:4.4,n:null}},
     positivos:[
-      "Rating up to 4.81 with 95.2% at 4-5 stars and NPS +81.0; Google lifetime rating rose to 4.5.",
-      "Median reply time of 3h 59m (tied for fastest in the group) and a 100% response rate."
+      "Group's highest rating: 4.89 on 37 Google reviews (its only platform this period), zero low-star, volume up (Momos arrow &uarr;76.2%).",
+      "100% response with a 3h 59m median reply; sentiment perfect where sampled."
     ],
     negativos:[
-      "Incident rate stays high at 23.8% (5 occurrences), up from 7.1% two periods ago.",
-      "Review pace fell from about 14 to 10 per week (21 reviews), and there were 0 boosted reviews this period.",
-      "Net comment sentiment is +53.6, but on only 28 tagged comments."
+      "No material negatives this period; Pricing &amp; Value sentiment (88/4) is its lowest category.",
+      "Listing cleanup: Grubhub 4.8 confirmed by Valeria on Nov 12 on the Santana Row listing (the Oct 29 value came from the 39 Mesa St commissary listing, now offline); Uber Eats shows 'Closed on Uber Eats' since April 2025."
     ],
     acciones:[
-      {owner:"mkt", text:"Check whether the QR / churro mechanic is still running as before; the slower pace and 0 boosted reviews suggest it may have eased. Keep the incentive tied to the survey, not to posting a public review."},
-      {owner:"ops", text:"Review the 5 incidents; last period's complaints were about price per taco and portion size."}
+      {owner:"mkt", text:"Amplify Parranga's streak (37 reviews at 4.89) in Santana Row creative; it is the group's proof point this period."},
+      {owner:"dir", text:"Codify the Parranga playbook for El Jard&iacute;n: same Row, opposite outcomes."}
     ]
   },
   {
-    id:"colibri", name:"Colibr\u00ed Mexican Bistro", sub:"Moraga Avenue",
-    count:22, rating:4.73, pct45:90.9, pct13:9.0, incidentRate:31.8, nps:77.3, status:"bien",
-    sentiment:null, sentimentLabel:null, positivity:62.1, positivityN:58,
-    prior:{count:48, rating:4.46, pct45:91.7, pct13:8.4},
-    platforms:{gmb:{rating:4.4,n:null}, yelp:{rating:3.9,n:null}, doordash:{rating:4.7,n:null}, ubereats:{rating:4.8,n:null}, grubhub:{rating:5.0,n:1}, resy:{rating:4.5,n:null}, opentable:{rating:4.3,n:null,priorRating:4.4}, tgtg:null, tripadvisor:{rating:3.7,n:null}, facebook:{rating:4.5,n:null}},
+    id:"colibri", name:"Colibr&iacute; Mexican Bistro", sub:"Moraga Avenue",
+    count:26, rating:4.18, pct45:62.5, pct13:16.7, incidentRate:33.3, nps:null, status:"atencion",
+    sentimentCats:"Food Quality 100/8, Atmosphere 100/8, Hospitality 79/13; weak spots Pricing &amp; Value 0/2, In-Store Ordering 0/2.",
+    prior:{count:22, rating:4.73, pct45:null, pct13:null},
+    platforms:{gmb:{rating:4.4,n:938}, yelp:{rating:3.9,n:2969}, doordash:{rating:4.7,n:'200+'}, ubereats:{rating:4.7,n:14,priorRating:4.8}, grubhub:{rating:5.0,n:1}, resy:{rating:4.5,n:null}, opentable:{rating:4.3,n:123}, tgtg:null, tripadvisor:{rating:3.7,n:null}, facebook:{rating:4.5,n:null}},
     positivos:[
-      "Second period of improvement: 3.89 &rarr; 4.46 &rarr; 4.73, with NPS up to +77.3 and net comment sentiment up to +62.1.",
-      "Food Quality is its top comment category (14 mentions), a good sign for a bistro."
+      "Food Quality and Atmosphere sentiment both 100 (8 comments each); Osvaldo/Oswaldo named in four reviews.",
+      "TOAST survey perfect (2 &times; 5.00); Yelp period average 4.20 on 10 reviews."
     ],
     negativos:[
-      "Incident rate climbed from 20.8% to 31.8% (7 occurrences) even as ratings rose; 6 of those landed in the first (partial) week.",
-      "Review pace fell from about 16 to 11 per week (22 reviews).",
-      "One Contact Us case is unresolved and unanswered; OpenTable slipped 4.4 &rarr; 4.3."
+      "Declined across the board: 5-star share 62.5% (Momos arrow &darr;23.9%), low-star 16.7% (&uarr;83.3%), response rate 88.5% (&darr;7.2%), the group's lowest.",
+      "Its 2 Contact Us cases have no written reply; median reply 15h 24m, the group's slowest."
     ],
     acciones:[
-      {owner:"ops", text:"Check what the early-period incidents were (6 in Oct 15&ndash;17) and whether they have stopped; the weekly counts fell to 0 and 1 afterwards."},
-      {owner:"mkt", text:"Answer and close the open Contact Us case."}
+      {owner:"ops", text:"Investigate the price/value complaints (sentiment 0/2) and answer the 2 open Contact Us cases within 48 hours."},
+      {owner:"dir", text:"Schedule a floor visit and menu/pricing review this week; all six metrics declined."}
     ]
   },
   {
     id:"ilparco", name:"Il Parco", sub:"",
-    count:48, rating:4.90, pct45:100.0, pct13:0.0, incidentRate:2.1, nps:89.6, status:"bien",
-    sentiment:null, sentimentLabel:null, positivity:92.3, positivityN:117,
-    prior:{count:126, rating:4.82, pct45:96.8, pct13:3.2},
-    platforms:{gmb:{rating:3.4,n:null}, yelp:{rating:3.2,n:null}, doordash:{rating:4.0,n:null,priorRating:4.1}, ubereats:null, grubhub:null, resy:null, opentable:null, tgtg:{rating:4.6,n:null}, tripadvisor:null, facebook:null},
+    count:50, rating:4.82, pct45:88.0, pct13:4.0, incidentRate:20.0, nps:null, status:"bien",
+    sentimentCats:"Hospitality 92/25, Atmosphere 94/39, Food Quality 86/28; weak spots Pricing &amp; Value 0/3, Speed of Service 33/3.",
+    prior:{count:48, rating:4.90, pct45:null, pct13:null},
+    platforms:{gmb:{rating:3.4,n:299}, yelp:{rating:3.3,n:258,priorRating:3.2}, doordash:{rating:4.0,n:null}, ubereats:null, grubhub:null, resy:null, opentable:null, tgtg:{rating:4.6,n:null}, tripadvisor:null, facebook:null},
     positivos:[
-      "Best performer for the second period in a row: 4.90 rating, 100% of reviews at 4-5 stars, 2.1% incident rate (about 1 occurrence), NPS +89.6.",
-      "Net comment sentiment +92.3 on 117 tagged comments, the strongest in the group."
+      "Third straight strong period: 4.82 on 50 reviews; Yelp drove it (48 reviews at 4.90).",
+      "Lifetime Yelp rating moved 3.2 &rarr; 3.3, the first Yelp lifetime move in the series."
     ],
     negativos:[
-      "45 of its 48 reviews came from Yelp, and Google got only 3, so the lifetime Google rating stays at 3.4 and the Yelp lifetime rating at 3.2.",
-      "Pace eased from about 42 to 24 reviews per week; the reason for the original surge is still unexplained.",
-      "One Contact Us case is unresolved and unanswered; Doordash slipped 4.1 &rarr; 4.0."
+      "Google is the weak channel: 2 reviews at 3.00 this period; the lifetime Google rating stays at 3.4.",
+      "Pricing &amp; Value sentiment 0/3 and Speed of Service 33/3 (small samples, directional)."
     ],
     acciones:[
-      {owner:"mkt", text:"Document what drives the Yelp volume, then aim the same effort at Google, where the rating (3.4) is the weakest and only 3 reviews arrived."},
-      {owner:"ops", text:"Answer and close the open Contact Us case."}
+      {owner:"mkt", text:"Push QR/ask toward Google at lunch: 48 of 50 period reviews landed on Yelp while Google sits at 3.4 lifetime."},
+      {owner:"ops", text:"Watch lunch-rush throughput; Speed of Service is its weakest category (33/100)."}
     ]
   }
 ];
 
-const tabsEl = document.getElementById('tabs');
-const overviewBodySantana = document.getElementById('overview-body-santana');
-const overviewBodySF = document.getElementById('overview-body-sf');
-const platformBody = document.getElementById('platform-body');
-const brandViews = document.getElementById('brand-views');
-
-function platDelta(p){
-  if(!p || p.priorRating === undefined) return '';
-  const diff = Math.round((p.rating - p.priorRating)*10)/10;
-  if(diff === 0) return '';
-  const color = diff > 0 ? 'var(--good)' : 'var(--bad)';
-  const arrow = diff > 0 ? '&uarr;' : '&darr;';
-  return ' <span style="color:'+color+';font-size:10.5px;font-weight:600;">'+arrow+Math.abs(diff).toFixed(1)+'</span>';
-}
-function platCell(p){
-  if(!p) return '<span style="color:var(--muted);">&mdash;</span>';
-  return '<span class="plat-cell">'+p.rating.toFixed(1)+(p.n?' <span class="n">(n='+p.n+')</span>':'')+platDelta(p)+'</span>';
-}
-function platCard(name, p){
-  if(!p) return '';
-  return '<div class="card"><div class="p-name">'+name+'</div><div class="p-val">'+p.rating.toFixed(1)+platDelta(p)+'</div><div class="p-n">'+(p.n?'n='+p.n:'')+(p.priorRating!==undefined?' <span style="color:var(--muted);">(was '+p.priorRating.toFixed(1)+')</span>':'')+'</div></div>';
-}
-
-function statusLabel(s){ return s==='bien' ? 'Healthy' : s==='atencion' ? 'Needs attention' : 'Critical'; }
-function statusDot(s){ return s==='bien' ? '#2E6B4F' : s==='atencion' ? '#A56A18' : '#A23B33'; }
-function sentimentColor(v){ return v>=25 ? 'var(--good)' : v>=0 ? 'var(--watch)' : 'var(--bad)'; }
-function positivityColor(v){ return v>=65 ? 'var(--good)' : v>=40 ? 'var(--watch)' : 'var(--bad)'; }
-function deltaText(diff, lowerIsBetter, suffix){
-  const rounded = Math.round(diff*10)/10;
-  const good = lowerIsBetter ? rounded < 0 : rounded > 0;
-  const bad = lowerIsBetter ? rounded > 0 : rounded < 0;
-  const color = rounded===0 ? 'var(--muted)' : (good ? 'var(--good)' : 'var(--bad)');
-  const arrow = rounded > 0 ? '&uarr;' : rounded < 0 ? '&darr;' : '&middot;';
-  const val = Math.abs(rounded).toFixed(1) + (suffix ? ' ' + suffix : '');
-  return '<span style="color:'+color+'; font-weight:600;">'+arrow+' '+val+'</span>';
-}
-
-const allTab = document.createElement('div');
-allTab.className = 'tab active';
-allTab.textContent = 'All restaurants';
-allTab.onclick = () => selectView('overview', allTab);
-
-const allRow = document.createElement('div');
-allRow.className = 'tab-row';
-allRow.appendChild(allTab);
-tabsEl.appendChild(allRow);
-
-const tabGroups = [
-  { label: 'Santana Row, San Jos\u00e9', memberIds: ['zazil', 'suspiro', 'eljardin', 'parranga'] },
-  { label: 'Presidio, San Francisco', memberIds: ['colibri', 'ilparco'] }
-];
-tabGroups.forEach(g => {
-  const row = document.createElement('div');
-  row.className = 'tab-row';
-  const label = document.createElement('span');
-  label.className = 'tab-cluster-label';
-  label.textContent = g.label;
-  row.appendChild(label);
-  g.memberIds.forEach(id => {
-    const b = brands.find(x => x.id === id);
-    if (!b) return;
-    const tab = document.createElement('div');
-    tab.className = 'tab';
-    tab.innerHTML = '<span class="dot" style="background:' + statusDot(b.status) + '"></span>' + b.name;
-    tab.onclick = () => selectView(b.id, tab);
-    row.appendChild(tab);
-  });
-  tabsEl.appendChild(row);
-});
-
-brands.forEach(b=>{
-  const tr = document.createElement('tr');
-  const ratingDiff = b.rating - b.prior.rating;
-  tr.innerHTML = `
-    <td><span class="brandname">${b.name}</span></td>
-    <td><span class="stamp ${b.status}">${statusLabel(b.status)}</span></td>
-    <td>${b.count}</td>
-    <td>${b.rating.toFixed(2)}</td>
-    <td>${b.pct45.toFixed(1)}%</td>
-    <td>${b.pct13.toFixed(1)}%</td>
-    <td>${deltaText(ratingDiff, false, 'pts rating')} <span style="color:var(--muted);font-size:11px;">(was ${b.prior.rating.toFixed(2)})</span></td>
-    <td>${b.nps>0?'+':''}${b.nps.toFixed(1)}</td>
-  `;
-  const targetBody = (b.id === 'colibri' || b.id === 'ilparco') ? overviewBodySF : overviewBodySantana;
-  targetBody.appendChild(tr);
-
-  const ptr = document.createElement('tr');
-  if (b.id === 'zazil') {
-    const dividerSR = document.createElement('tr');
-    dividerSR.innerHTML = '<td colspan="11" style="background:var(--brand-cream);font-family:\'IBM Plex Mono\',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);">Santana Row, San Jos&eacute;</td>';
-    platformBody.appendChild(dividerSR);
-  }
-  if (b.id === 'colibri') {
-    const divider = document.createElement('tr');
-    divider.innerHTML = '<td colspan="11" style="background:var(--brand-cream);font-family:\'IBM Plex Mono\',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);">Presidio, San Francisco</td>';
-    platformBody.appendChild(divider);
-  }
-  ptr.innerHTML = `
-    <td><span class="brandname">${b.name}</span></td>
-    <td>${platCell(b.platforms.gmb)}</td>
-    <td>${platCell(b.platforms.yelp)}</td>
-    <td>${platCell(b.platforms.doordash)}</td>
-    <td>${platCell(b.platforms.ubereats)}</td>
-    <td>${platCell(b.platforms.grubhub)}</td>
-    <td>${platCell(b.platforms.resy)}</td>
-    <td>${platCell(b.platforms.opentable)}</td>
-    <td>${platCell(b.platforms.tgtg)}</td>
-    <td>${platCell(b.platforms.tripadvisor)}</td>
-    <td>${platCell(b.platforms.facebook)}</td>
-  `;
-  platformBody.appendChild(ptr);
-
-  const view = document.createElement('div');
-  view.className = 'view pdf-pagebreak';
-  view.id = 'view-' + b.id;
-  const sentimentBlock = (b.positivity === undefined) ? `
-    <div class="sentiment-bar">
-      <div class="big" style="color:var(--muted)">N/A</div>
-      <div class="txt">Comment sentiment not available for this restaurant this period.</div>
-    </div>` : `
-    <div class="sentiment-bar">
-      <div class="big" style="color:${sentimentColor(b.positivity)}">${b.positivity>0?'+':''}${b.positivity.toFixed(1)}</div>
-      <div class="txt">Net sentiment this period: (% positive comments) minus (% negative comments), from ${b.positivityN} tagged comments in the Categories &amp; Keywords export. Scale: -100 to +100.${b.positivityN < 15 ? ' Small sample &mdash; treat as directional only.' : ''}</div>
-    </div>`;
-  view.innerHTML = `
-    <div class="brand-head">
-      <div>
-        <h2>${b.name}</h2>
-        <div class="brand-sub">${b.sub ? b.sub + ' &middot; ' : ''}Period: Oct 15 &ndash; 28, 2026</div>
-      </div>
-      <span class="stamp ${b.status}" style="font-size:12px;padding:6px 12px;">${statusLabel(b.status)}</span>
-    </div>
-
-    <div class="kpi-grid">
-      <div class="kpi"><div class="num">${b.count}</div><div class="lbl">Number of reviews</div><div class="sub">${deltaText(b.count-b.prior.count, false, '')} vs. previous period (${b.prior.count})</div></div>
-      <div class="kpi"><div class="num">${b.rating.toFixed(2)}</div><div class="lbl">Average rating</div><div class="sub">${deltaText(b.rating-b.prior.rating, false, '')} vs. previous period (${b.prior.rating.toFixed(2)})</div></div>
-      <div class="kpi"><div class="num" style="color:var(--good)">${b.pct45.toFixed(1)}%</div><div class="lbl">Great reviews (4-5&#9733;)</div><div class="sub">${deltaText(b.pct45-b.prior.pct45, false, 'pt')} vs. previous period (${b.prior.pct45.toFixed(1)}%)</div></div>
-      <div class="kpi"><div class="num" style="color:var(--bad)">${b.pct13.toFixed(1)}%</div><div class="lbl">Low reviews (1-3&#9733;)</div><div class="sub">${deltaText(b.pct13-b.prior.pct13, true, 'pt')} vs. previous period (${b.prior.pct13.toFixed(1)}%)</div></div>
-    </div>
-
-    ${sentimentBlock}
-
-    <div class="section-title">Ratings by platform (lifetime, manually verified)</div>
-    <div class="plat-mini">
-      ${platCard('Google', b.platforms.gmb)}
-      ${platCard('Yelp', b.platforms.yelp)}
-      ${platCard('Doordash', b.platforms.doordash)}
-      ${platCard('Uber Eats', b.platforms.ubereats)}
-      ${platCard('Grubhub', b.platforms.grubhub)}
-      ${platCard('Resy', b.platforms.resy)}
-      ${platCard('OpenTable', b.platforms.opentable)}
-      ${platCard('Too Good To Go', b.platforms.tgtg)}
-      ${platCard('TripAdvisor', b.platforms.tripadvisor)}
-      ${platCard('Facebook', b.platforms.facebook)}
-    </div>
-
-
-    <div class="cols">
-      <div class="panel pos"><h3>&#9650; Positive highlights</h3><ul>${b.positivos.map(t=>'<li>'+t+'</li>').join('')}</ul></div>
-      <div class="panel neg"><h3>&#9660; Negative highlights</h3><ul>${b.negativos.map(t=>'<li>'+t+'</li>').join('')}</ul></div>
-    </div>
-
-    <div class="actions">
-      <h3>Action items</h3>
-      ${b.acciones.map(a=>`<div class="action-row"><span class="owner ${a.owner}">${a.owner==='mkt'?'Marketing':a.owner==='ops'?'Operations':'Leadership'}</span><p>${a.text}</p></div>`).join('')}
-    </div>
-  `;
-  brandViews.appendChild(view);
-});
-
-function selectView(id, tabEl){
-  document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
-  document.getElementById('view-'+id).classList.add('active');
-  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
-  tabEl.classList.add('active');
-}
-
 // ---- Period comparison: make the 3 period cards clickable ----
 // "current" and "previous" come straight from the brands data already on this page
-// "current"/"previous" come from brands; "twoAgo" (Sep 3-16) is carried forward from the earlier full report.
+// "current" comes from brands; "previous" (Oct 15-28) and "twoAgo" (Sep 17-Oct 7) are as published in the Oct 29 report.
 const periodRatings = {
   current: {
-    label: 'Rating (Oct 15&ndash;28)',
-    note: '',
+    label: 'Rating (Oct 29&ndash;Nov 11)',
+    note: 'Great/low shares use the corrected OSAT (5-star) / B3 definitions from Momos. NPS is not available this period (the leaderboard NPS column is empty for all six locations).',
     rows: brands.map(b => ({ name: b.name, rating: b.rating, count: b.count, pct45: b.pct45, pct13: b.pct13 }))
   },
   previous: {
-    label: 'Rating (Sep 17&ndash;Oct 7)',
-    note: '',
-    rows: brands.map(b => ({ name: b.name, rating: b.prior.rating, count: b.prior.count, pct45: b.prior.pct45, pct13: b.prior.pct13 }))
+    label: 'Rating (Oct 15&ndash;28)',
+    note: 'As published in the Oct 29 report (six-brand scope, brand-filtered figures). Its "great reviews" column used the old 4-5-star label, so it is not directly comparable to the current period 5-star OSAT (see glossary).',
+    rows: [
+      { name: 'Zazil Cocina Mexicana', rating: 4.73, count: 44, pct45: 93.2, pct13: 6.8 },
+      { name: 'Suspiro', rating: 4.25, count: 32, pct45: 81.2, pct13: 18.7 },
+      { name: 'El Jard\u00edn Tequila Bar', rating: 3.33, count: 21, pct45: 52.4, pct13: 47.5 },
+      { name: 'Taquer\u00eda Parranga', rating: 4.81, count: 21, pct45: 95.2, pct13: 4.8 },
+      { name: 'Colibr\u00ed Mexican Bistro', rating: 4.73, count: 22, pct45: 90.9, pct13: 9.0 },
+      { name: 'Il Parco', rating: 4.90, count: 48, pct45: 100.0, pct13: 0.0 }
+    ]
   },
   twoAgo: {
-    label: 'Rating (Sep 3&ndash;16)',
-    note: 'Carried forward from this window\u2019s own full report, so count and star-split are real, not estimated.',
+    label: 'Rating (Sep 17&ndash;Oct 7)',
+    note: 'As published in the Oct 29 report under the old 4-5-star label; not directly comparable to the current period 5-star OSAT (see glossary).',
     rows: [
-      { name: 'Zazil Cocina Mexicana', rating: 4.58, count: 45, pct45: 88.9, pct13: 11.1 },
-      { name: 'Suspiro', rating: 4.65, count: 46, pct45: 91.3, pct13: 8.7 },
-      { name: 'El Jard\u00edn Tequila Bar', rating: 3.61, count: 18, pct45: 61.1, pct13: 38.9 },
-      { name: 'Taquer\u00eda Parranga', rating: 4.79, count: 28, pct45: 96.4, pct13: 3.6 },
-      { name: 'Colibr\u00ed Mexican Bistro', rating: 3.89, count: 27, pct45: 74.1, pct13: 25.9 },
-      { name: 'Il Parco', rating: 4.00, count: 3, pct45: 66.7, pct13: 33.3 }
+      { name: 'Zazil Cocina Mexicana', rating: 4.59, count: 69, pct45: 91.3, pct13: 8.6 },
+      { name: 'Suspiro', rating: 4.60, count: 40, pct45: 90.0, pct13: 10.0 },
+      { name: 'El Jard\u00edn Tequila Bar', rating: 4.30, count: 43, pct45: 76.7, pct13: 23.3 },
+      { name: 'Taquer\u00eda Parranga', rating: 4.66, count: 41, pct45: 92.7, pct13: 7.2 },
+      { name: 'Colibr\u00ed Mexican Bistro', rating: 4.46, count: 48, pct45: 91.7, pct13: 8.4 },
+      { name: 'Il Parco', rating: 4.82, count: 126, pct45: 96.8, pct13: 3.2 }
     ]
   }
 };
@@ -1128,8 +945,8 @@ renderPeriodCompare('current');
       data: {
         labels: labels,
         datasets: [
-          { label: 'Previous period (Sep 17\u2013Oct 7)', data: prior, backgroundColor: '#898781', borderRadius: 6 },
-          { label: 'This period (Oct 15\u201328)', data: curr, backgroundColor: '#2a78d6', borderRadius: 6 }
+          { label: 'Previous period (Oct 15\u201328)', data: prior, backgroundColor: '#898781', borderRadius: 6 },
+          { label: 'This period (Oct 29\u2013Nov 11)', data: curr, backgroundColor: '#2a78d6', borderRadius: 6 }
         ]
       },
       options: {
@@ -1158,4 +975,4 @@ renderPeriodCompare('current');
 </script>
 
 </body>
-</html>
+  </html>
