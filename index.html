@@ -456,7 +456,7 @@
   <div class="table-wrap" style="margin-top:10px;color:var(--ink);">
     <table>
       <thead>
-        <tr><th>Restaurant</th><th id="periodCompareColLabel">Rating (Oct 29&ndash;Nov 11)</th><th>Reviews</th><th id="periodCompareGreatLabel">Great reviews (5&#9733;)</th><th>Low reviews (1-3&#9733;)</th></tr>
+        <tr><th>Restaurant</th><th id="periodCompareColLabel">Rating (Oct 29&ndash;Nov 11)</th><th>Feedback</th><th id="periodCompareGreatLabel">Great reviews (5&#9733;)</th><th>Low reviews (1-3&#9733;)</th></tr>
       </thead>
       <tbody id="periodCompareBody"></tbody>
     </table>
@@ -513,7 +513,7 @@
         <div class="score-lbl">Group average rating this period (187 reviews, Oct 29&ndash;Nov 11)</div>
       </div>
       <div class="desc">
-        <b>The group recovered this period, led by Santana Row's two healthiest brands.</b> <b>Parranga leads at 4.89</b> (37 reviews, zero low-star, volume up 76%) and <b>Zazil climbed for a third straight period to 4.84</b>. In <b>Santana Row</b>: <b>El Jard&iacute;n is still the weakest at 3.40</b>, driven by Yelp (8 Yelp reviews at 2.12 while 12 Google reviews average 4.25), with a 115% incident rate (23 occurrences on 20 feedbacks); <b>Suspiro stabilized at 4.28</b> after two declines, on much lower volume (14 reviews). In <b>San Francisco</b>: Il Parco posted a third straight strong period (4.82 on 50 reviews, 48 from Yelp); <b>Colibr&iacute; gave back last period's gains</b> (4.18, from 4.73). Platform mix: 187 reviews at 4.57 (Yelp 100 at 4.62, Google 74 at 4.59, delivery 13 at 4.08), 12 surveys all at 5.00, and 3 Contact Us cases (none with a written reply). Comment sentiment across the group (157 tagged comments): <b>78.6% positive, 6.9% neutral, 14.5% negative</b> (net +64.1).
+        <b>The group recovered this period, led by Santana Row's two healthiest brands.</b> <b>Parranga leads at 4.89</b> (37 reviews, zero low-star, volume up 76%) and <b>Zazil climbed for a third straight period to 4.84</b>. In <b>Santana Row</b>: <b>El Jard&iacute;n is still the weakest at 3.40</b>, driven by Yelp (8 Yelp reviews at 2.12 while 12 Google reviews average 4.25), with a 115% incident rate (23 occurrences on 20 feedbacks); <b>Suspiro stabilized at 4.28</b> after two declines, on much lower volume (21 feedback items). In <b>San Francisco</b>: Il Parco posted a third straight strong period (4.82 on 50 reviews, 48 from Yelp); <b>Colibr&iacute; gave back last period's gains</b> (4.18, from 4.73). Platform mix: 187 reviews at 4.57 (Yelp 100 at 4.62, Google 74 at 4.59, delivery 13 at 4.08), 12 surveys all at 5.00, and 3 Contact Us cases (none with a written reply). Comment sentiment across the group (157 tagged comments): <b>78.6% positive, 6.9% neutral, 14.5% negative</b> (net +64.1).
       </div>
     </div>
 
@@ -608,15 +608,15 @@
       <h3>Three-period trend &mdash; the real story</h3>
       <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 6px;">Santana Row, San Jos&eacute;</div>
       <ul>
-        <li><b>Zazil keeps climbing:</b> 4.59 (69) &rarr; 4.73 (44) &rarr; 4.84 (44), a third consecutive period up.</li>
+        <li><b>Zazil keeps climbing:</b> 4.59 (69) &rarr; 4.73 (44) &rarr; 4.84 (48), a third consecutive period up.</li>
         <li><b>Parranga leads the group:</b> 4.66 (41) &rarr; 4.81 (21) &rarr; 4.89 (37), its highest rating in the series with volume up 76%.</li>
-        <li><b>Suspiro is stabilizing:</b> 4.60 &rarr; 4.25 &rarr; 4.28 (14 reviews), after two periods of decline; low-star share is still 14.3% and volume fell sharply.</li>
+        <li><b>Suspiro is stabilizing:</b> 4.60 &rarr; 4.25 &rarr; 4.28 (21), after two periods of decline; low-star share is still 14.3% and volume fell sharply.</li>
         <li><b>El Jard&iacute;n stays well below the group:</b> 4.30 (43) &rarr; 3.33 (21) &rarr; 3.40 (20), driven by Yelp (8 Yelp reviews at 2.12 this period vs. 12 Google reviews at 4.25).</li>
       </ul>
       <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:14px 0 6px;">Presidio, San Francisco</div>
       <ul>
         <li><b>Il Parco holds strong on real volume:</b> 4.82 (126) &rarr; 4.90 (48) &rarr; 4.82 (50), a third straight strong period.</li>
-        <li><b>Colibr&iacute; gave back last period's gains:</b> 4.46 (48) &rarr; 4.73 (22) &rarr; 4.18 (22).</li>
+        <li><b>Colibr&iacute; gave back last period's gains:</b> 4.46 (48) &rarr; 4.73 (22) &rarr; 4.18 (26).</li>
       </ul>
       <div style="font-size:11.5px;color:var(--muted);margin-top:8px;">First two points as published in the Oct 29 report; current values from Momos today. Per-brand figures are brand-filtered, so the six-vs-nine-brand scope correction does not affect them.</div>
     </div>
@@ -1001,7 +1001,7 @@ brands.forEach(b=>{
     </div>
 
     <div class="kpi-grid">
-      <div class="kpi"><div class="num">${b.count}</div><div class="lbl">Number of reviews</div><div class="sub">${deltaText(b.count-b.prior.count, false, '')} vs. previous period (${b.prior.count})</div></div>
+      <div class="kpi"><div class="num">${b.count}</div><div class="lbl">Total feedback</div><div class="sub">${deltaText(b.count-b.prior.count, false, '')} vs. previous period (${b.prior.count})</div></div>
       <div class="kpi"><div class="num">${b.rating.toFixed(2)}</div><div class="lbl">Average rating</div><div class="sub">${deltaText(b.rating-b.prior.rating, false, '')} vs. previous period (${b.prior.rating.toFixed(2)})</div></div>
       <div class="kpi"><div class="num" style="color:var(--good)">${b.pct45.toFixed(1)}%</div><div class="lbl">Great reviews (5&#9733;)</div><div class="sub">${b.prior.pct45===null?'<span style="color:var(--muted)">prior not comparable (definition corrected, see glossary)</span>':deltaText(b.pct45-b.prior.pct45, false, 'pt') + ' vs. previous period (' + b.prior.pct45.toFixed(1) + '%)'}</div></div>
       <div class="kpi"><div class="num" style="color:var(--bad)">${b.pct13.toFixed(1)}%</div><div class="lbl">Low reviews (1-3&#9733;)</div><div class="sub">${b.prior.pct13===null?'<span style="color:var(--muted)">prior not comparable (definition corrected, see glossary)</span>':deltaText(b.pct13-b.prior.pct13, true, 'pt') + ' vs. previous period (' + b.prior.pct13.toFixed(1) + '%)'}</div></div>
