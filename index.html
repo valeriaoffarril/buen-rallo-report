@@ -444,7 +444,7 @@
   <div class="table-wrap" style="margin-top:10px;color:var(--ink);">
     <table>
       <thead>
-        <tr><th>Restaurant</th><th id="periodCompareColLabel">Rating (Oct 29&ndash;Nov 11)</th><th>Reviews</th><th>Great reviews (5&#9733;)</th><th>Low reviews (1-3&#9733;)</th></tr>
+        <tr><th>Restaurant</th><th id="periodCompareColLabel">Rating (Oct 29&ndash;Nov 11)</th><th>Reviews</th><th id="periodCompareGreatLabel">Great reviews (5&#9733;)</th><th>Low reviews (1-3&#9733;)</th></tr>
       </thead>
       <tbody id="periodCompareBody"></tbody>
     </table>
@@ -860,6 +860,7 @@ const brands = [
 ];
 
 const tabsEl = document.getElementById('tabs');
+
 const overviewBodySantana = document.getElementById('overview-body-santana');
 const overviewBodySF = document.getElementById('overview-body-sf');
 const platformBody = document.getElementById('platform-body');
@@ -1069,6 +1070,7 @@ const periodRatings = {
 function renderPeriodCompare(periodKey){
   const data = periodRatings[periodKey];
   document.getElementById('periodCompareColLabel').innerHTML = data.label;
+  document.getElementById('periodCompareGreatLabel').innerHTML = periodKey === 'current' ? 'Great reviews (5&#9733;)' : 'Great reviews (4-5&#9733;)';
   document.getElementById('periodCompareNote').innerHTML = data.note;
   const body = document.getElementById('periodCompareBody');
   body.innerHTML = '';
